@@ -1,0 +1,157 @@
+{
+  "contractName": "ProxyData",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820b20a60a4dc25446103e6196d8938f02b42f47b0bad605da9c65d6c4852d3f5a20029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820b20a60a4dc25446103e6196d8938f02b42f47b0bad605da9c65d6c4852d3f5a20029",
+  "sourceMap": "27:52:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:52:1;;;;;;;",
+  "deployedSourceMap": "27:52:1:-;;;;;",
+  "source": "pragma solidity ^0.4.23;\n\n\ncontract ProxyData {\n    address internal proxied;\n}",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+  "ast": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+    "exportedSymbols": {
+      "ProxyData": [
+        61
+      ]
+    },
+    "id": 62,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 61,
+        "linearizedBaseContracts": [
+          61
+        ],
+        "name": "ProxyData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "proxied",
+            "nodeType": "VariableDeclaration",
+            "scope": 61,
+            "src": "52:24:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 62,
+        "src": "27:52:1"
+      }
+    ],
+    "src": "0:79:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+    "exportedSymbols": {
+      "ProxyData": [
+        61
+      ]
+    },
+    "id": 62,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 61,
+        "linearizedBaseContracts": [
+          61
+        ],
+        "name": "ProxyData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "proxied",
+            "nodeType": "VariableDeclaration",
+            "scope": 61,
+            "src": "52:24:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 62,
+        "src": "27:52:1"
+      }
+    ],
+    "src": "0:79:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-08T00:54:25.558Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

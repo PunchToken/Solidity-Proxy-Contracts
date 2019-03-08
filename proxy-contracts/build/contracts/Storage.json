@@ -88,24 +88,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5060405161039c38038061039c833981018060405281019080805182019291906020018051906020019092919080519060200190929190505050600073__StorageLibrary________________________63f865620b90918585856040518563ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156100e85780820151818401526020810190506100cd565b50505050905090810190601f1680156101155780820380516001836020036101000a031916815260200191505b509550505050505060006040518083038186803b15801561013557600080fd5b505af4158015610149573d6000803e3d6000fd5b5050505050505061023d8061015f6000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fda5389146100515780637cb3406f1461007e575b600080fd5b34801561005d57600080fd5b5061007c600480360381019080803590602001909291905050506100c7565b005b34801561008a57600080fd5b506100a960048036038101908080359060200190929190505050610158565b60405180826000191660001916815260200191505060405180910390f35b600073__StorageLibrary________________________636bdc913d9091836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060006040518083038186803b15801561013d57600080fd5b505af4158015610151573d6000803e3d6000fd5b5050505050565b60008073__StorageLibrary________________________6391a4bb1a9091846040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b1580156101cf57600080fd5b505af41580156101e3573d6000803e3d6000fd5b505050506040513d60208110156101f957600080fd5b810190808051906020019092919050505090509190505600a165627a7a72305820638ba0ce7915f84375d31a7b8f3029d37189831f05e87339a312cad8558eb4ad0029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fda5389146100515780637cb3406f1461007e575b600080fd5b34801561005d57600080fd5b5061007c600480360381019080803590602001909291905050506100c7565b005b34801561008a57600080fd5b506100a960048036038101908080359060200190929190505050610158565b60405180826000191660001916815260200191505060405180910390f35b600073__StorageLibrary________________________636bdc913d9091836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060006040518083038186803b15801561013d57600080fd5b505af4158015610151573d6000803e3d6000fd5b5050505050565b60008073__StorageLibrary________________________6391a4bb1a9091846040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b1580156101cf57600080fd5b505af41580156101e3573d6000803e3d6000fd5b505050506040513d60208110156101f957600080fd5b810190808051906020019092919050505090509190505600a165627a7a72305820638ba0ce7915f84375d31a7b8f3029d37189831f05e87339a312cad8558eb4ad0029",
-  "sourceMap": "59:612:2:-;;;324:140;8:9:-1;5:2;;;30:1;27;20:12;5:2;324:140:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;415:4;:9;;;;425:7;434:11;447:9;415:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;415:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;415:42:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;415:42:2;;;;324:140;;;59:612;;;;;;",
-  "deployedSourceMap": "59:612:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;469:85;;8:9:-1;5:2;;;30:1;27;20:12;5:2;469:85:2;;;;;;;;;;;;;;;;;;;;;;;;;;560:109;;8:9:-1;5:2;;;30:1;27;20:12;5:2;560:109:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;469:85;525:4;:9;;;;535:11;525:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;525:22:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;525:22:2;;;;469:85;:::o;560:109::-;611:7;637:4;:10;;;;648:13;637:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;637:25:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;637:25:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;637:25:2;;;;;;;;;;;;;;;;630:32;;560:109;;;:::o",
-  "source": "pragma solidity ^0.4.23;\n\nimport \"./storage.library.sol\";\n\ncontract Storage {\n    using StorageLibrary for StorageLibrary.StorageInstance;\n\n    event FilledStorage(uint amountAdded, uint newFillAmount);\n    event DrankStorage(uint amountDrank, uint newFillAmount);\n\n    StorageLibrary.StorageInstance private self;    \n\n    constructor(string _flavor, uint _fillAmount, uint _capacity)\n        public\n    {\n        self.init(_flavor, _fillAmount, _capacity);\n    }\n    function fill(uint amountToAdd) public {\n        return self.fill(amountToAdd);\n    }\n\n    function drink(uint amountToDrink) public returns (bytes32) {\n        return self.drink(amountToDrink);\n    }\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161039d38038061039d833981018060405281019080805182019291906020018051906020019092919080519060200190929190505050600173__StorageLibrary________________________63f865620b90918585856040518563ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156100e85780820151818401526020810190506100cd565b50505050905090810190601f1680156101155780820380516001836020036101000a031916815260200191505b509550505050505060006040518083038186803b15801561013557600080fd5b505af4158015610149573d6000803e3d6000fd5b5050505050505061023e8061015f6000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fda5389146100515780637cb3406f1461007e575b600080fd5b34801561005d57600080fd5b5061007c600480360381019080803590602001909291905050506100c7565b005b34801561008a57600080fd5b506100a960048036038101908080359060200190929190505050610158565b60405180826000191660001916815260200191505060405180910390f35b600173__StorageLibrary________________________636bdc913d9091836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060006040518083038186803b15801561013d57600080fd5b505af4158015610151573d6000803e3d6000fd5b5050505050565b6000600173__StorageLibrary________________________6391a4bb1a9091846040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b1580156101d057600080fd5b505af41580156101e4573d6000803e3d6000fd5b505050506040513d60208110156101fa57600080fd5b810190808051906020019092919050505090509190505600a165627a7a723058200c135054f865110c85ffa7259d8388a23a4367e6dfe19de6455e1a08b18f34c40029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fda5389146100515780637cb3406f1461007e575b600080fd5b34801561005d57600080fd5b5061007c600480360381019080803590602001909291905050506100c7565b005b34801561008a57600080fd5b506100a960048036038101908080359060200190929190505050610158565b60405180826000191660001916815260200191505060405180910390f35b600173__StorageLibrary________________________636bdc913d9091836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060006040518083038186803b15801561013d57600080fd5b505af4158015610151573d6000803e3d6000fd5b5050505050565b6000600173__StorageLibrary________________________6391a4bb1a9091846040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b1580156101d057600080fd5b505af41580156101e4573d6000803e3d6000fd5b505050506040513d60208110156101fa57600080fd5b810190808051906020019092919050505090509190505600a165627a7a723058200c135054f865110c85ffa7259d8388a23a4367e6dfe19de6455e1a08b18f34c40029",
+  "sourceMap": "87:625:4:-;;;365:140;8:9:-1;5:2;;;30:1;27;20:12;5:2;365:140:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;456:4;:9;;;;466:7;475:11;488:9;456:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;456:42:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;456:42:4;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;456:42:4;;;;365:140;;;87:625;;;;;;",
+  "deployedSourceMap": "87:625:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;510:85;;8:9:-1;5:2;;;30:1;27;20:12;5:2;510:85:4;;;;;;;;;;;;;;;;;;;;;;;;;;601:109;;8:9:-1;5:2;;;30:1;27;20:12;5:2;601:109:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;510:85;566:4;:9;;;;576:11;566:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;566:22:4;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;566:22:4;;;;510:85;:::o;601:109::-;652:7;678:4;:10;;;;689:13;678:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;678:25:4;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;678:25:4;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;678:25:4;;;;;;;;;;;;;;;;671:32;;601:109;;;:::o",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"./storage.library.sol\";\nimport \"./proxy.data.sol\";\n\n\ncontract Storage is ProxyData {\n    using StorageLibrary for StorageLibrary.StorageInstance;\n\n    event FilledStorage(uint amountAdded, uint newFillAmount);\n    event DrankStorage(uint amountDrank, uint newFillAmount);\n\n    StorageLibrary.StorageInstance private self;    \n\n    constructor(string _flavor, uint _fillAmount, uint _capacity)\n        public\n    {\n        self.init(_flavor, _fillAmount, _capacity);\n    }\n    function fill(uint amountToAdd) public {\n        return self.fill(amountToAdd);\n    }\n\n    function drink(uint amountToDrink) public returns (bytes32) {\n        return self.drink(amountToDrink);\n    }\n}\n",
   "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.sol",
   "ast": {
     "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.sol",
     "exportedSymbols": {
       "Storage": [
-        272
+        305
       ]
     },
-    "id": 273,
+    "id": 306,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 211,
+        "id": 241,
         "literals": [
           "solidity",
           "^",
@@ -113,57 +113,90 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:2"
+        "src": "0:24:4"
       },
       {
         "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.library.sol",
         "file": "./storage.library.sol",
-        "id": 212,
+        "id": 242,
         "nodeType": "ImportDirective",
-        "scope": 273,
-        "sourceUnit": 210,
-        "src": "26:31:2",
+        "scope": 306,
+        "sourceUnit": 240,
+        "src": "26:31:4",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+        "file": "./proxy.data.sol",
+        "id": 243,
+        "nodeType": "ImportDirective",
+        "scope": 306,
+        "sourceUnit": 62,
+        "src": "58:26:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 244,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 61,
+              "src": "107:9:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$61",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 245,
+            "nodeType": "InheritanceSpecifier",
+            "src": "107:9:4"
+          }
+        ],
+        "contractDependencies": [
+          61
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 272,
+        "id": 305,
         "linearizedBaseContracts": [
-          272
+          305,
+          61
         ],
         "name": "Storage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 215,
+            "id": 248,
             "libraryName": {
               "contractScope": null,
-              "id": 213,
+              "id": 246,
               "name": "StorageLibrary",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 209,
-              "src": "88:14:2",
+              "referencedDeclaration": 239,
+              "src": "129:14:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageLibrary_$209",
+                "typeIdentifier": "t_contract$_StorageLibrary_$239",
                 "typeString": "library StorageLibrary"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "82:56:2",
+            "src": "123:56:4",
             "typeName": {
               "contractScope": null,
-              "id": 214,
+              "id": 247,
               "name": "StorageLibrary.StorageInstance",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 77,
-              "src": "107:30:2",
+              "referencedDeclaration": 107,
+              "src": "148:30:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                "typeIdentifier": "t_struct$_StorageInstance_$107_storage_ptr",
                 "typeString": "struct StorageLibrary.StorageInstance"
               }
             }
@@ -171,21 +204,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 221,
+            "id": 254,
             "name": "FilledStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 220,
+              "id": 253,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 217,
+                  "id": 250,
                   "indexed": false,
                   "name": "amountAdded",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
-                  "src": "164:16:2",
+                  "scope": 254,
+                  "src": "205:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -193,10 +226,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 216,
+                    "id": 249,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "164:4:2",
+                    "src": "205:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -207,12 +240,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 219,
+                  "id": 252,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
-                  "src": "182:18:2",
+                  "scope": 254,
+                  "src": "223:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -220,10 +253,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 218,
+                    "id": 251,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "182:4:2",
+                    "src": "223:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -233,28 +266,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "163:38:2"
+              "src": "204:38:4"
             },
-            "src": "144:58:2"
+            "src": "185:58:4"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 227,
+            "id": 260,
             "name": "DrankStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 226,
+              "id": 259,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 223,
+                  "id": 256,
                   "indexed": false,
                   "name": "amountDrank",
                   "nodeType": "VariableDeclaration",
-                  "scope": 227,
-                  "src": "226:16:2",
+                  "scope": 260,
+                  "src": "267:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -262,10 +295,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 222,
+                    "id": 255,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "226:4:2",
+                    "src": "267:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -276,12 +309,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 225,
+                  "id": 258,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 227,
-                  "src": "244:18:2",
+                  "scope": 260,
+                  "src": "285:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -289,10 +322,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 224,
+                    "id": 257,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "244:4:2",
+                    "src": "285:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -302,32 +335,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "225:38:2"
+              "src": "266:38:4"
             },
-            "src": "207:57:2"
+            "src": "248:57:4"
           },
           {
             "constant": false,
-            "id": 229,
+            "id": 262,
             "name": "self",
             "nodeType": "VariableDeclaration",
-            "scope": 272,
-            "src": "270:43:2",
+            "scope": 305,
+            "src": "311:43:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+              "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
               "typeString": "struct StorageLibrary.StorageInstance"
             },
             "typeName": {
               "contractScope": null,
-              "id": 228,
+              "id": 261,
               "name": "StorageLibrary.StorageInstance",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 77,
-              "src": "270:30:2",
+              "referencedDeclaration": 107,
+              "src": "311:30:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                "typeIdentifier": "t_struct$_StorageInstance_$107_storage_ptr",
                 "typeString": "struct StorageLibrary.StorageInstance"
               }
             },
@@ -336,9 +369,9 @@
           },
           {
             "body": {
-              "id": 246,
+              "id": 279,
               "nodeType": "Block",
-              "src": "405:59:2",
+              "src": "446:59:4",
               "statements": [
                 {
                   "expression": {
@@ -346,12 +379,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 241,
+                        "id": 274,
                         "name": "_flavor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 231,
-                        "src": "425:7:2",
+                        "referencedDeclaration": 264,
+                        "src": "466:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -359,12 +392,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 242,
+                        "id": 275,
                         "name": "_fillAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 233,
-                        "src": "434:11:2",
+                        "referencedDeclaration": 266,
+                        "src": "475:11:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -372,12 +405,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 243,
+                        "id": 276,
                         "name": "_capacity",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 235,
-                        "src": "447:9:2",
+                        "referencedDeclaration": 268,
+                        "src": "488:9:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -401,32 +434,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 238,
+                        "id": 271,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "415:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "456:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 240,
+                      "id": 273,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 118,
-                      "src": "415:9:2",
+                      "referencedDeclaration": 148,
+                      "src": "456:9:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,string memory,uint256,uint256)"
                       }
                     },
-                    "id": 244,
+                    "id": 277,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -434,20 +467,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "415:42:2",
+                    "src": "456:42:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 245,
+                  "id": 278,
                   "nodeType": "ExpressionStatement",
-                  "src": "415:42:2"
+                  "src": "456:42:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 247,
+            "id": 280,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -455,16 +488,16 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 236,
+              "id": 269,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 231,
+                  "id": 264,
                   "name": "_flavor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "336:14:2",
+                  "scope": 280,
+                  "src": "377:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -472,10 +505,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 230,
+                    "id": 263,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "336:6:2",
+                    "src": "377:6:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -486,11 +519,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 233,
+                  "id": 266,
                   "name": "_fillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "352:16:2",
+                  "scope": 280,
+                  "src": "393:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -498,10 +531,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 232,
+                    "id": 265,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "352:4:2",
+                    "src": "393:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -512,11 +545,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 235,
+                  "id": 268,
                   "name": "_capacity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "370:14:2",
+                  "scope": 280,
+                  "src": "411:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -524,10 +557,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 234,
+                    "id": 267,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:4:2",
+                    "src": "411:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -537,26 +570,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "335:50:2"
+              "src": "376:50:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 237,
+              "id": 270,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "405:0:2"
+              "src": "446:0:4"
             },
-            "scope": 272,
-            "src": "324:140:2",
+            "scope": 305,
+            "src": "365:140:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 257,
+              "id": 290,
               "nodeType": "Block",
-              "src": "508:46:2",
+              "src": "549:46:4",
               "statements": [
                 {
                   "expression": {
@@ -564,12 +597,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 254,
+                        "id": 287,
                         "name": "amountToAdd",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 249,
-                        "src": "535:11:2",
+                        "referencedDeclaration": 282,
+                        "src": "576:11:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -585,32 +618,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 252,
+                        "id": 285,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "525:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "566:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 253,
+                      "id": 286,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fill",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 157,
-                      "src": "525:9:2",
+                      "referencedDeclaration": 187,
+                      "src": "566:9:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,uint256)"
                       }
                     },
-                    "id": 255,
+                    "id": 288,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -618,21 +651,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "525:22:2",
+                    "src": "566:22:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 251,
-                  "id": 256,
+                  "functionReturnParameters": 284,
+                  "id": 289,
                   "nodeType": "Return",
-                  "src": "518:29:2"
+                  "src": "559:29:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 258,
+            "id": 291,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -640,16 +673,16 @@
             "name": "fill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 250,
+              "id": 283,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 249,
+                  "id": 282,
                   "name": "amountToAdd",
                   "nodeType": "VariableDeclaration",
-                  "scope": 258,
-                  "src": "483:16:2",
+                  "scope": 291,
+                  "src": "524:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -657,10 +690,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 248,
+                    "id": 281,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "483:4:2",
+                    "src": "524:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -670,26 +703,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "482:18:2"
+              "src": "523:18:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 251,
+              "id": 284,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "508:0:2"
+              "src": "549:0:4"
             },
-            "scope": 272,
-            "src": "469:85:2",
+            "scope": 305,
+            "src": "510:85:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 270,
+              "id": 303,
               "nodeType": "Block",
-              "src": "620:49:2",
+              "src": "661:49:4",
               "statements": [
                 {
                   "expression": {
@@ -697,12 +730,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 267,
+                        "id": 300,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 260,
-                        "src": "648:13:2",
+                        "referencedDeclaration": 293,
+                        "src": "689:13:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -718,32 +751,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 265,
+                        "id": 298,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "637:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "678:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 266,
+                      "id": 299,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "drink",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 197,
-                      "src": "637:10:2",
+                      "referencedDeclaration": 227,
+                      "src": "678:10:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_uint256_$returns$_t_bytes32_$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_uint256_$returns$_t_bytes32_$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,uint256) returns (bytes32)"
                       }
                     },
-                    "id": 268,
+                    "id": 301,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -751,21 +784,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "637:25:2",
+                    "src": "678:25:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 264,
-                  "id": 269,
+                  "functionReturnParameters": 297,
+                  "id": 302,
                   "nodeType": "Return",
-                  "src": "630:32:2"
+                  "src": "671:32:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 271,
+            "id": 304,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -773,16 +806,16 @@
             "name": "drink",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 261,
+              "id": 294,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 260,
+                  "id": 293,
                   "name": "amountToDrink",
                   "nodeType": "VariableDeclaration",
-                  "scope": 271,
-                  "src": "575:18:2",
+                  "scope": 304,
+                  "src": "616:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -790,10 +823,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 259,
+                    "id": 292,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "575:4:2",
+                    "src": "616:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -803,20 +836,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "574:20:2"
+              "src": "615:20:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 264,
+              "id": 297,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 263,
+                  "id": 296,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 271,
-                  "src": "611:7:2",
+                  "scope": 304,
+                  "src": "652:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -824,10 +857,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 262,
+                    "id": 295,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "611:7:2",
+                    "src": "652:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -837,33 +870,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "610:9:2"
+              "src": "651:9:4"
             },
-            "scope": 272,
-            "src": "560:109:2",
+            "scope": 305,
+            "src": "601:109:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 273,
-        "src": "59:612:2"
+        "scope": 306,
+        "src": "87:625:4"
       }
     ],
-    "src": "0:672:2"
+    "src": "0:713:4"
   },
   "legacyAST": {
     "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.sol",
     "exportedSymbols": {
       "Storage": [
-        272
+        305
       ]
     },
-    "id": 273,
+    "id": 306,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 211,
+        "id": 241,
         "literals": [
           "solidity",
           "^",
@@ -871,57 +904,90 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:2"
+        "src": "0:24:4"
       },
       {
         "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.library.sol",
         "file": "./storage.library.sol",
-        "id": 212,
+        "id": 242,
         "nodeType": "ImportDirective",
-        "scope": 273,
-        "sourceUnit": 210,
-        "src": "26:31:2",
+        "scope": 306,
+        "sourceUnit": 240,
+        "src": "26:31:4",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+        "file": "./proxy.data.sol",
+        "id": 243,
+        "nodeType": "ImportDirective",
+        "scope": 306,
+        "sourceUnit": 62,
+        "src": "58:26:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 244,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 61,
+              "src": "107:9:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$61",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 245,
+            "nodeType": "InheritanceSpecifier",
+            "src": "107:9:4"
+          }
+        ],
+        "contractDependencies": [
+          61
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 272,
+        "id": 305,
         "linearizedBaseContracts": [
-          272
+          305,
+          61
         ],
         "name": "Storage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 215,
+            "id": 248,
             "libraryName": {
               "contractScope": null,
-              "id": 213,
+              "id": 246,
               "name": "StorageLibrary",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 209,
-              "src": "88:14:2",
+              "referencedDeclaration": 239,
+              "src": "129:14:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageLibrary_$209",
+                "typeIdentifier": "t_contract$_StorageLibrary_$239",
                 "typeString": "library StorageLibrary"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "82:56:2",
+            "src": "123:56:4",
             "typeName": {
               "contractScope": null,
-              "id": 214,
+              "id": 247,
               "name": "StorageLibrary.StorageInstance",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 77,
-              "src": "107:30:2",
+              "referencedDeclaration": 107,
+              "src": "148:30:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                "typeIdentifier": "t_struct$_StorageInstance_$107_storage_ptr",
                 "typeString": "struct StorageLibrary.StorageInstance"
               }
             }
@@ -929,21 +995,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 221,
+            "id": 254,
             "name": "FilledStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 220,
+              "id": 253,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 217,
+                  "id": 250,
                   "indexed": false,
                   "name": "amountAdded",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
-                  "src": "164:16:2",
+                  "scope": 254,
+                  "src": "205:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -951,10 +1017,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 216,
+                    "id": 249,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "164:4:2",
+                    "src": "205:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -965,12 +1031,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 219,
+                  "id": 252,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
-                  "src": "182:18:2",
+                  "scope": 254,
+                  "src": "223:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -978,10 +1044,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 218,
+                    "id": 251,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "182:4:2",
+                    "src": "223:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -991,28 +1057,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "163:38:2"
+              "src": "204:38:4"
             },
-            "src": "144:58:2"
+            "src": "185:58:4"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 227,
+            "id": 260,
             "name": "DrankStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 226,
+              "id": 259,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 223,
+                  "id": 256,
                   "indexed": false,
                   "name": "amountDrank",
                   "nodeType": "VariableDeclaration",
-                  "scope": 227,
-                  "src": "226:16:2",
+                  "scope": 260,
+                  "src": "267:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1020,10 +1086,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 222,
+                    "id": 255,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "226:4:2",
+                    "src": "267:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1034,12 +1100,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 225,
+                  "id": 258,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 227,
-                  "src": "244:18:2",
+                  "scope": 260,
+                  "src": "285:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1047,10 +1113,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 224,
+                    "id": 257,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "244:4:2",
+                    "src": "285:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1060,32 +1126,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "225:38:2"
+              "src": "266:38:4"
             },
-            "src": "207:57:2"
+            "src": "248:57:4"
           },
           {
             "constant": false,
-            "id": 229,
+            "id": 262,
             "name": "self",
             "nodeType": "VariableDeclaration",
-            "scope": 272,
-            "src": "270:43:2",
+            "scope": 305,
+            "src": "311:43:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+              "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
               "typeString": "struct StorageLibrary.StorageInstance"
             },
             "typeName": {
               "contractScope": null,
-              "id": 228,
+              "id": 261,
               "name": "StorageLibrary.StorageInstance",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 77,
-              "src": "270:30:2",
+              "referencedDeclaration": 107,
+              "src": "311:30:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                "typeIdentifier": "t_struct$_StorageInstance_$107_storage_ptr",
                 "typeString": "struct StorageLibrary.StorageInstance"
               }
             },
@@ -1094,9 +1160,9 @@
           },
           {
             "body": {
-              "id": 246,
+              "id": 279,
               "nodeType": "Block",
-              "src": "405:59:2",
+              "src": "446:59:4",
               "statements": [
                 {
                   "expression": {
@@ -1104,12 +1170,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 241,
+                        "id": 274,
                         "name": "_flavor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 231,
-                        "src": "425:7:2",
+                        "referencedDeclaration": 264,
+                        "src": "466:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -1117,12 +1183,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 242,
+                        "id": 275,
                         "name": "_fillAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 233,
-                        "src": "434:11:2",
+                        "referencedDeclaration": 266,
+                        "src": "475:11:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1130,12 +1196,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 243,
+                        "id": 276,
                         "name": "_capacity",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 235,
-                        "src": "447:9:2",
+                        "referencedDeclaration": 268,
+                        "src": "488:9:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1159,32 +1225,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 238,
+                        "id": 271,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "415:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "456:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 240,
+                      "id": 273,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 118,
-                      "src": "415:9:2",
+                      "referencedDeclaration": 148,
+                      "src": "456:9:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,string memory,uint256,uint256)"
                       }
                     },
-                    "id": 244,
+                    "id": 277,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1192,20 +1258,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "415:42:2",
+                    "src": "456:42:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 245,
+                  "id": 278,
                   "nodeType": "ExpressionStatement",
-                  "src": "415:42:2"
+                  "src": "456:42:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 247,
+            "id": 280,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1213,16 +1279,16 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 236,
+              "id": 269,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 231,
+                  "id": 264,
                   "name": "_flavor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "336:14:2",
+                  "scope": 280,
+                  "src": "377:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1230,10 +1296,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 230,
+                    "id": 263,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "336:6:2",
+                    "src": "377:6:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1244,11 +1310,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 233,
+                  "id": 266,
                   "name": "_fillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "352:16:2",
+                  "scope": 280,
+                  "src": "393:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1256,10 +1322,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 232,
+                    "id": 265,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "352:4:2",
+                    "src": "393:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1270,11 +1336,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 235,
+                  "id": 268,
                   "name": "_capacity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 247,
-                  "src": "370:14:2",
+                  "scope": 280,
+                  "src": "411:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1282,10 +1348,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 234,
+                    "id": 267,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:4:2",
+                    "src": "411:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1295,26 +1361,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "335:50:2"
+              "src": "376:50:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 237,
+              "id": 270,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "405:0:2"
+              "src": "446:0:4"
             },
-            "scope": 272,
-            "src": "324:140:2",
+            "scope": 305,
+            "src": "365:140:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 257,
+              "id": 290,
               "nodeType": "Block",
-              "src": "508:46:2",
+              "src": "549:46:4",
               "statements": [
                 {
                   "expression": {
@@ -1322,12 +1388,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 254,
+                        "id": 287,
                         "name": "amountToAdd",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 249,
-                        "src": "535:11:2",
+                        "referencedDeclaration": 282,
+                        "src": "576:11:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1343,32 +1409,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 252,
+                        "id": 285,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "525:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "566:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 253,
+                      "id": 286,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fill",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 157,
-                      "src": "525:9:2",
+                      "referencedDeclaration": 187,
+                      "src": "566:9:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,uint256)"
                       }
                     },
-                    "id": 255,
+                    "id": 288,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1376,21 +1442,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "525:22:2",
+                    "src": "566:22:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 251,
-                  "id": 256,
+                  "functionReturnParameters": 284,
+                  "id": 289,
                   "nodeType": "Return",
-                  "src": "518:29:2"
+                  "src": "559:29:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 258,
+            "id": 291,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1398,16 +1464,16 @@
             "name": "fill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 250,
+              "id": 283,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 249,
+                  "id": 282,
                   "name": "amountToAdd",
                   "nodeType": "VariableDeclaration",
-                  "scope": 258,
-                  "src": "483:16:2",
+                  "scope": 291,
+                  "src": "524:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1415,10 +1481,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 248,
+                    "id": 281,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "483:4:2",
+                    "src": "524:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1428,26 +1494,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "482:18:2"
+              "src": "523:18:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 251,
+              "id": 284,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "508:0:2"
+              "src": "549:0:4"
             },
-            "scope": 272,
-            "src": "469:85:2",
+            "scope": 305,
+            "src": "510:85:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 270,
+              "id": 303,
               "nodeType": "Block",
-              "src": "620:49:2",
+              "src": "661:49:4",
               "statements": [
                 {
                   "expression": {
@@ -1455,12 +1521,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 267,
+                        "id": 300,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 260,
-                        "src": "648:13:2",
+                        "referencedDeclaration": 293,
+                        "src": "689:13:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1476,32 +1542,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 265,
+                        "id": 298,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "637:4:2",
+                        "referencedDeclaration": 262,
+                        "src": "678:4:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage",
+                          "typeIdentifier": "t_struct$_StorageInstance_$107_storage",
                           "typeString": "struct StorageLibrary.StorageInstance storage ref"
                         }
                       },
-                      "id": 266,
+                      "id": 299,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "drink",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 197,
-                      "src": "637:10:2",
+                      "referencedDeclaration": 227,
+                      "src": "678:10:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$77_storage_ptr_$_t_uint256_$returns$_t_bytes32_$bound_to$_t_struct$_StorageInstance_$77_storage_ptr_$",
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_StorageInstance_$107_storage_ptr_$_t_uint256_$returns$_t_bytes32_$bound_to$_t_struct$_StorageInstance_$107_storage_ptr_$",
                         "typeString": "function (struct StorageLibrary.StorageInstance storage pointer,uint256) returns (bytes32)"
                       }
                     },
-                    "id": 268,
+                    "id": 301,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1509,21 +1575,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "637:25:2",
+                    "src": "678:25:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 264,
-                  "id": 269,
+                  "functionReturnParameters": 297,
+                  "id": 302,
                   "nodeType": "Return",
-                  "src": "630:32:2"
+                  "src": "671:32:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 271,
+            "id": 304,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1531,16 +1597,16 @@
             "name": "drink",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 261,
+              "id": 294,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 260,
+                  "id": 293,
                   "name": "amountToDrink",
                   "nodeType": "VariableDeclaration",
-                  "scope": 271,
-                  "src": "575:18:2",
+                  "scope": 304,
+                  "src": "616:18:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1548,10 +1614,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 259,
+                    "id": 292,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "575:4:2",
+                    "src": "616:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1561,20 +1627,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "574:20:2"
+              "src": "615:20:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 264,
+              "id": 297,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 263,
+                  "id": 296,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 271,
-                  "src": "611:7:2",
+                  "scope": 304,
+                  "src": "652:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1582,10 +1648,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 262,
+                    "id": 295,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "611:7:2",
+                    "src": "652:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1595,20 +1661,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "610:9:2"
+              "src": "651:9:4"
             },
-            "scope": 272,
-            "src": "560:109:2",
+            "scope": 305,
+            "src": "601:109:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 273,
-        "src": "59:612:2"
+        "scope": 306,
+        "src": "87:625:4"
       }
     ],
-    "src": "0:672:2"
+    "src": "0:713:4"
   },
   "compiler": {
     "name": "solc",
@@ -1623,7 +1689,7 @@
     }
   },
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-06T01:50:14.046Z",
+  "updatedAt": "2019-03-08T00:54:25.560Z",
   "devdoc": {
     "methods": {}
   },

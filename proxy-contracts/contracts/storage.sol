@@ -1,10 +1,11 @@
 pragma solidity ^0.4.23;
 
 import "./storage.library.sol";
+import "./storage.data.sol";
 import "./proxy.data.sol";
 
 
-contract Storage is ProxyData {
+contract Storage is StorageData {
     using StorageLibrary for StorageLibrary.StorageInstance;
 
     event FilledStorage(uint amountAdded, uint newFillAmount);
