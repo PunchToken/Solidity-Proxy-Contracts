@@ -1,0 +1,29 @@
+{
+  "name": "solidity-proxy-contracts",
+  "version": "1.0.0",
+  "description": "A sample of solidity proxy contracts using libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PunchToken/Solidity-Proxy-Contracts.git"
+  },
+  "keywords": [
+    "truffle",
+    "web3",
+    "solidity",
+    "proxy",
+    "delegatecall"
+  ],
+  "author": "Dennis O'Connell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PunchToken/Solidity-Proxy-Contracts/issues"
+  },
+  "homepage": "https://github.com/PunchToken/Solidity-Proxy-Contracts#readme",
+  "dependencies": {
+    "truffle": "^5.0.7"
+  }
+}
