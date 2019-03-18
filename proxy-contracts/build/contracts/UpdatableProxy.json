@@ -1,0 +1,844 @@
+{
+  "contractName": "UpdatableProxy",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newProxied",
+          "type": "address"
+        }
+      ],
+      "name": "updateProxied",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "proxied",
+          "type": "address"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806104c283398101806040528101908080519060200190929190805190602001909291905050508082806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506103ef806100d36000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806313af403514610094578063141e74bb146100d7575b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f48060008114610090573d83f35b3d83fd5b3480156100a057600080fd5b506100d5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061011a565b005b3480156100e357600080fd5b50610118600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026f565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260418152602001807f4f776e6572206164647265737320666f72207468697320636f6e74726163742081526020017f646f6573206e6f74206d6174636820746865207265636f72646564206f776e6581526020017f720000000000000000000000000000000000000000000000000000000000000081525060600191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610380576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260418152602001807f4f776e6572206164647265737320666f72207468697320636f6e74726163742081526020017f646f6573206e6f74206d6174636820746865207265636f72646564206f776e6581526020017f720000000000000000000000000000000000000000000000000000000000000081525060600191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058201ad7a8d98609434ad2ba56da4b2b3f7170a94872e72d461f435fadb13bb5a7910029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806313af403514610094578063141e74bb146100d7575b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f48060008114610090573d83f35b3d83fd5b3480156100a057600080fd5b506100d5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061011a565b005b3480156100e357600080fd5b50610118600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026f565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260418152602001807f4f776e6572206164647265737320666f72207468697320636f6e74726163742081526020017f646f6573206e6f74206d6174636820746865207265636f72646564206f776e6581526020017f720000000000000000000000000000000000000000000000000000000000000081525060600191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610380576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260418152602001807f4f776e6572206164647265737320666f72207468697320636f6e74726163742081526020017f646f6573206e6f74206d6174636820746865207265636f72646564206f776e6581526020017f720000000000000000000000000000000000000000000000000000000000000081525060600191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058201ad7a8d98609434ad2ba56da4b2b3f7170a94872e72d461f435fadb13bb5a7910029",
+  "sourceMap": "95:178:12:-;;;156:115;8:9:-1;5:2;;;30:1;27;20:12;5:2;156:115:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;258:5;229:7;145:8:5;135:7;;:18;;;;;;;;;;;;;;;;;;88:72;299:6:2;291:5;;:14;;;;;;;;;;;;;;;;;;234:78;156:115:12;;95:178;;;;;;",
+  "deployedSourceMap": "95:178:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;205:12:5;220:7;;;;;;;;;;;205:22;;286:4;280:11;334:14;331:1;317:12;304:45;448:16;434:12;418:14;404:12;398:4;394:1;390:6;377:88;485:7;510:1;505:49;;;;598:16;584:12;577:38;505:49;535:16;521:12;514:38;94:110:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;94:110:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:117:11;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:117:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;94:110:3;106:5:2;;;;;;;;;;;92:19;;:10;:19;;;84:97;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;189:8:3;181:5;;:16;;;;;;;;;;;;;;;;;;94:110;:::o;152:117:11:-;106:5:2;;;;;;;;;;;92:19;;:10;:19;;;84:97;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;252:10:11;242:7;;:20;;;;;;;;;;;;;;;;;;152:117;:::o",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"../proxy/proxy.sol\";\nimport \"./updatable.proxy.shared.sol\";\n\ncontract UpdatableProxy is Proxy, UpdatableProxyShared {\n    constructor(address proxied, address owner)\n        public\n        Proxy(proxied)\n        OwnableData(owner)\n    {}\n}\n\ncontract UpdatableProxyImplementation is UpdatableProxyShared {\n    constructor() public OwnableData(0) {}\n}",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.sol",
+  "ast": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.sol",
+    "exportedSymbols": {
+      "UpdatableProxy": [
+        520
+      ],
+      "UpdatableProxyImplementation": [
+        530
+      ]
+    },
+    "id": 531,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 499,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
+        "file": "../proxy/proxy.sol",
+        "id": 500,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 176,
+        "src": "26:28:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.shared.sol",
+        "file": "./updatable.proxy.shared.sol",
+        "id": 501,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 498,
+        "src": "55:38:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 502,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 175,
+              "src": "122:5:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$175",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 503,
+            "nodeType": "InheritanceSpecifier",
+            "src": "122:5:12"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 504,
+              "name": "UpdatableProxyShared",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 497,
+              "src": "129:20:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UpdatableProxyShared_$497",
+                "typeString": "contract UpdatableProxyShared"
+              }
+            },
+            "id": 505,
+            "nodeType": "InheritanceSpecifier",
+            "src": "129:20:12"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          145,
+          150,
+          175,
+          497
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 520,
+        "linearizedBaseContracts": [
+          520,
+          497,
+          145,
+          127,
+          175,
+          150
+        ],
+        "name": "UpdatableProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 518,
+              "nodeType": "Block",
+              "src": "269:2:12",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 519,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 512,
+                    "name": "proxied",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 507,
+                    "src": "229:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 513,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 511,
+                  "name": "Proxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 175,
+                  "src": "223:5:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Proxy_$175_$",
+                    "typeString": "type(contract Proxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "223:14:12"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 515,
+                    "name": "owner",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 509,
+                    "src": "258:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 516,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 514,
+                  "name": "OwnableData",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 127,
+                  "src": "246:11:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_OwnableData_$127_$",
+                    "typeString": "type(contract OwnableData)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "246:18:12"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 510,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 507,
+                  "name": "proxied",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 519,
+                  "src": "168:15:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 506,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 509,
+                  "name": "owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 519,
+                  "src": "185:13:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 508,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:32:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 517,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "269:0:12"
+            },
+            "scope": 520,
+            "src": "156:115:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "95:178:12"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 521,
+              "name": "UpdatableProxyShared",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 497,
+              "src": "316:20:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UpdatableProxyShared_$497",
+                "typeString": "contract UpdatableProxyShared"
+              }
+            },
+            "id": 522,
+            "nodeType": "InheritanceSpecifier",
+            "src": "316:20:12"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          145,
+          150,
+          497
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 530,
+        "linearizedBaseContracts": [
+          530,
+          497,
+          145,
+          127,
+          150
+        ],
+        "name": "UpdatableProxyImplementation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 528,
+              "nodeType": "Block",
+              "src": "379:2:12",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 529,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 525,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "376:1:12",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  }
+                ],
+                "id": 526,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 524,
+                  "name": "OwnableData",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 127,
+                  "src": "364:11:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_OwnableData_$127_$",
+                    "typeString": "type(contract OwnableData)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "364:14:12"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 527,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:0:12"
+            },
+            "scope": 530,
+            "src": "343:38:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "275:108:12"
+      }
+    ],
+    "src": "0:383:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.sol",
+    "exportedSymbols": {
+      "UpdatableProxy": [
+        520
+      ],
+      "UpdatableProxyImplementation": [
+        530
+      ]
+    },
+    "id": 531,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 499,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
+        "file": "../proxy/proxy.sol",
+        "id": 500,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 176,
+        "src": "26:28:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.shared.sol",
+        "file": "./updatable.proxy.shared.sol",
+        "id": 501,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 498,
+        "src": "55:38:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 502,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 175,
+              "src": "122:5:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$175",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 503,
+            "nodeType": "InheritanceSpecifier",
+            "src": "122:5:12"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 504,
+              "name": "UpdatableProxyShared",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 497,
+              "src": "129:20:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UpdatableProxyShared_$497",
+                "typeString": "contract UpdatableProxyShared"
+              }
+            },
+            "id": 505,
+            "nodeType": "InheritanceSpecifier",
+            "src": "129:20:12"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          145,
+          150,
+          175,
+          497
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 520,
+        "linearizedBaseContracts": [
+          520,
+          497,
+          145,
+          127,
+          175,
+          150
+        ],
+        "name": "UpdatableProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 518,
+              "nodeType": "Block",
+              "src": "269:2:12",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 519,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 512,
+                    "name": "proxied",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 507,
+                    "src": "229:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 513,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 511,
+                  "name": "Proxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 175,
+                  "src": "223:5:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Proxy_$175_$",
+                    "typeString": "type(contract Proxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "223:14:12"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 515,
+                    "name": "owner",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 509,
+                    "src": "258:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 516,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 514,
+                  "name": "OwnableData",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 127,
+                  "src": "246:11:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_OwnableData_$127_$",
+                    "typeString": "type(contract OwnableData)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "246:18:12"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 510,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 507,
+                  "name": "proxied",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 519,
+                  "src": "168:15:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 506,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 509,
+                  "name": "owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 519,
+                  "src": "185:13:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 508,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:32:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 517,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "269:0:12"
+            },
+            "scope": 520,
+            "src": "156:115:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "95:178:12"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 521,
+              "name": "UpdatableProxyShared",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 497,
+              "src": "316:20:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UpdatableProxyShared_$497",
+                "typeString": "contract UpdatableProxyShared"
+              }
+            },
+            "id": 522,
+            "nodeType": "InheritanceSpecifier",
+            "src": "316:20:12"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          145,
+          150,
+          497
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 530,
+        "linearizedBaseContracts": [
+          530,
+          497,
+          145,
+          127,
+          150
+        ],
+        "name": "UpdatableProxyImplementation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 528,
+              "nodeType": "Block",
+              "src": "379:2:12",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 529,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 525,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "376:1:12",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  }
+                ],
+                "id": 526,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 524,
+                  "name": "OwnableData",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 127,
+                  "src": "364:11:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_OwnableData_$127_$",
+                    "typeString": "type(contract OwnableData)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "364:14:12"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 527,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:0:12"
+            },
+            "scope": 530,
+            "src": "343:38:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "275:108:12"
+      }
+    ],
+    "src": "0:383:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-17T16:19:07.282Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

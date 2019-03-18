@@ -122,24 +122,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x61054e610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3007300000000000000000000000000000000000000003014608060405260043610610079576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636bdc913d1461007e57806391a4bb1a146100b5578063f865620b14610108578063ff33ae261461018f575b600080fd5b81801561008a57600080fd5b506100b360048036038101908080359060200190929190803590602001909291905050506101c3565b005b8180156100c157600080fd5b506100ea60048036038101908080359060200190929190803590602001909291905050506102a6565b60405180826000191660001916815260200191505060405180910390f35b81801561011457600080fd5b5061018d60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919080359060200190929190505050610394565b005b6101ad6004803603810190808035906020019092919050505061046f565b6040518082815260200191505060405180910390f35b60008183600001540190508260000154811180156101e5575082600101548111155b1515610259576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f7567682063617061636974790000000000000000000000000081525060200191505060405180910390fd5b8083600001819055507f5b1444d210869db0180a30a379dddd8f9a6a4a0bb1735cc2c501956b94786fe28282604051808381526020018281526020019250505060405180910390a1505050565b60008082846000015403905083600001548110151561032d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f75676820746f206472696e6b0000000000000000000000000081525060200191505060405180910390fd5b8084600001819055507f1e320da94635dae3ceb29a0d03de5976d3a56456998a286779f90bce41608b2b8382604051808381526020018281526020019250505060405180910390a18260405180828152602001915050604051809103902091505092915050565b8082111580156103a45750600081115b151561043e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260238152602001807f6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f81526020017f756e74000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8284600201908051906020019061045692919061047d565b5081846000018190555080846001018190555050505050565b600081600001549050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104be57805160ff19168380011785556104ec565b828001600101855582156104ec579182015b828111156104eb5782518255916020019190600101906104d0565b5b5090506104f991906104fd565b5090565b61051f91905b8082111561051b576000816000905550600101610503565b5090565b905600a165627a7a72305820fb8d7c173c810dd5f0bc24b225cf8507a6dbddd2fa869adcf8ece754264d1a2f0029",
-  "deployedBytecode": "0x7300000000000000000000000000000000000000003014608060405260043610610079576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636bdc913d1461007e57806391a4bb1a146100b5578063f865620b14610108578063ff33ae261461018f575b600080fd5b81801561008a57600080fd5b506100b360048036038101908080359060200190929190803590602001909291905050506101c3565b005b8180156100c157600080fd5b506100ea60048036038101908080359060200190929190803590602001909291905050506102a6565b60405180826000191660001916815260200191505060405180910390f35b81801561011457600080fd5b5061018d60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919080359060200190929190505050610394565b005b6101ad6004803603810190808035906020019092919050505061046f565b6040518082815260200191505060405180910390f35b60008183600001540190508260000154811180156101e5575082600101548111155b1515610259576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f7567682063617061636974790000000000000000000000000081525060200191505060405180910390fd5b8083600001819055507f5b1444d210869db0180a30a379dddd8f9a6a4a0bb1735cc2c501956b94786fe28282604051808381526020018281526020019250505060405180910390a1505050565b60008082846000015403905083600001548110151561032d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f75676820746f206472696e6b0000000000000000000000000081525060200191505060405180910390fd5b8084600001819055507f1e320da94635dae3ceb29a0d03de5976d3a56456998a286779f90bce41608b2b8382604051808381526020018281526020019250505060405180910390a18260405180828152602001915050604051809103902091505092915050565b8082111580156103a45750600081115b151561043e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260238152602001807f6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f81526020017f756e74000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8284600201908051906020019061045692919061047d565b5081846000018190555080846001018190555050505050565b600081600001549050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104be57805160ff19168380011785556104ec565b828001600101855582156104ec579182015b828111156104eb5782518255916020019190600101906104d0565b5b5090506104f991906104fd565b5090565b61051f91905b8082111561051b576000816000905550600101610503565b5090565b905600a165627a7a72305820fb8d7c173c810dd5f0bc24b225cf8507a6dbddd2fa869adcf8ece754264d1a2f0029",
-  "sourceMap": "27:1478:1:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
-  "deployedSourceMap": "27:1478:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;627:319;;8:9:-1;5:2;;;30:1;27;20:12;5:2;627:319:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:419;;8:9:-1;5:2;;;30:1;27;20:12;5:2;952:419:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;289:333;;8:9:-1;5:2;;;30:1;27;20:12;5:2;289:333:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1377:116;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;627:319;706:14;741:11;723:4;:15;;;:29;706:46;;782:4;:15;;;770:9;:27;:57;;;;;814:4;:13;;;801:9;:26;;770:57;762:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;878:9;860:4;:15;;:27;;;;902:37;916:11;929:9;902:37;;;;;;;;;;;;;;;;;;;;;;;;627:319;;;:::o;952:419::-;1033:7;1052:14;1087:13;1069:4;:15;;;:31;1052:48;;1130:4;:15;;;1118:9;:27;1110:58;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1196:9;1178:4;:15;;:27;;;;1220:38;1233:13;1248:9;1220:38;;;;;;;;;;;;;;;;;;;;;;;;1350:13;1340:24;;;;;;;;;;;;;;;;;;1333:31;;952:419;;;;;:::o;289:333::-;445:9;430:11;:24;;:41;;;;;470:1;458:9;:13;430:41;422:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;534:7;520:4;:11;;:21;;;;;;;;;;;;:::i;:::-;;569:11;551:4;:15;;:29;;;;606:9;590:4;:13;;:25;;;;289:333;;;;:::o;1377:116::-;1448:4;1471;:15;;;1464:22;;1377:116;;;:::o;27:1478::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "bytecode": "0x61054e610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3007300000000000000000000000000000000000000003014608060405260043610610079576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636bdc913d1461007e57806391a4bb1a146100b5578063f865620b14610108578063ff33ae261461018f575b600080fd5b81801561008a57600080fd5b506100b360048036038101908080359060200190929190803590602001909291905050506101c3565b005b8180156100c157600080fd5b506100ea60048036038101908080359060200190929190803590602001909291905050506102a6565b60405180826000191660001916815260200191505060405180910390f35b81801561011457600080fd5b5061018d60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919080359060200190929190505050610394565b005b6101ad6004803603810190808035906020019092919050505061046f565b6040518082815260200191505060405180910390f35b60008183600001540190508260000154811180156101e5575082600101548111155b1515610259576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f7567682063617061636974790000000000000000000000000081525060200191505060405180910390fd5b8083600001819055507f5b1444d210869db0180a30a379dddd8f9a6a4a0bb1735cc2c501956b94786fe28282604051808381526020018281526020019250505060405180910390a1505050565b60008082846000015403905083600001548110151561032d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f75676820746f206472696e6b0000000000000000000000000081525060200191505060405180910390fd5b8084600001819055507f1e320da94635dae3ceb29a0d03de5976d3a56456998a286779f90bce41608b2b8382604051808381526020018281526020019250505060405180910390a18260405180828152602001915050604051809103902091505092915050565b8082111580156103a45750600081115b151561043e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260238152602001807f6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f81526020017f756e74000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8284600201908051906020019061045692919061047d565b5081846000018190555080846001018190555050505050565b600081600001549050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104be57805160ff19168380011785556104ec565b828001600101855582156104ec579182015b828111156104eb5782518255916020019190600101906104d0565b5b5090506104f991906104fd565b5090565b61051f91905b8082111561051b576000816000905550600101610503565b5090565b905600a165627a7a72305820811ef2a88d10c7de25a1d73e755847ebdb26053f6e3c408aabc2838f6df2e2ca0029",
+  "deployedBytecode": "0x7300000000000000000000000000000000000000003014608060405260043610610079576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636bdc913d1461007e57806391a4bb1a146100b5578063f865620b14610108578063ff33ae261461018f575b600080fd5b81801561008a57600080fd5b506100b360048036038101908080359060200190929190803590602001909291905050506101c3565b005b8180156100c157600080fd5b506100ea60048036038101908080359060200190929190803590602001909291905050506102a6565b60405180826000191660001916815260200191505060405180910390f35b81801561011457600080fd5b5061018d60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919080359060200190929190505050610394565b005b6101ad6004803603810190808035906020019092919050505061046f565b6040518082815260200191505060405180910390f35b60008183600001540190508260000154811180156101e5575082600101548111155b1515610259576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f7567682063617061636974790000000000000000000000000081525060200191505060405180910390fd5b8083600001819055507f5b1444d210869db0180a30a379dddd8f9a6a4a0bb1735cc2c501956b94786fe28282604051808381526020018281526020019250505060405180910390a1505050565b60008082846000015403905083600001548110151561032d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6e6f7420656e6f75676820746f206472696e6b0000000000000000000000000081525060200191505060405180910390fd5b8084600001819055507f1e320da94635dae3ceb29a0d03de5976d3a56456998a286779f90bce41608b2b8382604051808381526020018281526020019250505060405180910390a18260405180828152602001915050604051809103902091505092915050565b8082111580156103a45750600081115b151561043e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260238152602001807f6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f81526020017f756e74000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8284600201908051906020019061045692919061047d565b5081846000018190555080846001018190555050505050565b600081600001549050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104be57805160ff19168380011785556104ec565b828001600101855582156104ec579182015b828111156104eb5782518255916020019190600101906104d0565b5b5090506104f991906104fd565b5090565b61051f91905b8082111561051b576000816000905550600101610503565b5090565b905600a165627a7a72305820811ef2a88d10c7de25a1d73e755847ebdb26053f6e3c408aabc2838f6df2e2ca0029",
+  "sourceMap": "27:1478:7:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
+  "deployedSourceMap": "27:1478:7:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;627:319;;8:9:-1;5:2;;;30:1;27;20:12;5:2;627:319:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:419;;8:9:-1;5:2;;;30:1;27;20:12;5:2;952:419:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;289:333;;8:9:-1;5:2;;;30:1;27;20:12;5:2;289:333:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1377:116;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;627:319;706:14;741:11;723:4;:15;;;:29;706:46;;782:4;:15;;;770:9;:27;:57;;;;;814:4;:13;;;801:9;:26;;770:57;762:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;878:9;860:4;:15;;:27;;;;902:37;916:11;929:9;902:37;;;;;;;;;;;;;;;;;;;;;;;;627:319;;;:::o;952:419::-;1033:7;1052:14;1087:13;1069:4;:15;;;:31;1052:48;;1130:4;:15;;;1118:9;:27;1110:58;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1196:9;1178:4;:15;;:27;;;;1220:38;1233:13;1248:9;1220:38;;;;;;;;;;;;;;;;;;;;;;;;1350:13;1340:24;;;;;;;;;;;;;;;;;;1333:31;;952:419;;;;;:::o;289:333::-;445:9;430:11;:24;;:41;;;;;470:1;458:9;:13;430:41;422:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;534:7;520:4;:11;;:21;;;;;;;;;;;;:::i;:::-;;569:11;551:4;:15;;:29;;;;606:9;590:4;:13;;:25;;;;289:333;;;;:::o;1377:116::-;1448:4;1471;:15;;;1464:22;;1377:116;;;:::o;27:1478::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.23;\n\n\nlibrary StorageLibrary {\n    event FilledStorage(uint amountAdded, uint newFillAmount);\n    event DrankStorage(uint amountDrank, uint newFillAmount);\n\n    struct StorageInstance {\n        uint fillAmount;\n        uint capacity;\n        string flavor;\n    }\n\n    function init(\n        StorageInstance storage self,\n        string _flavor, uint _fillAmount, uint _capacity\n    ) public {\n        require(_fillAmount <= _capacity && _capacity > 0,\"not enough capacity for fill amount\");\n        self.flavor = _flavor;\n        self.fillAmount = _fillAmount;\n        self.capacity = _capacity;\n    }\n    function fill(StorageInstance storage self, uint amountToAdd) public {\n        uint newAmount = self.fillAmount + amountToAdd;\n        require(newAmount > self.fillAmount && newAmount <= self.capacity,\"not enough capacity\");\n        self.fillAmount = newAmount;\n        emit FilledStorage(amountToAdd, newAmount);\n    }\n\n    function drink(StorageInstance storage self, uint amountToDrink) public returns (bytes32) {\n        uint newAmount = self.fillAmount - amountToDrink;\n        require(newAmount < self.fillAmount,\"not enough to drink\");\n        self.fillAmount = newAmount;\n        emit DrankStorage(amountToDrink, newAmount);\n        // this mess of hashes just here to pad out the bytecode\n        return keccak256(amountToDrink);\n    }\n\n    function fillAmount(StorageInstance storage self) public view returns (uint) {\n        return self.fillAmount;\n    }\n\n    \n   \n}",
-  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.library.sol",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage/storage.library.sol",
   "ast": {
-    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.library.sol",
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage/storage.library.sol",
     "exportedSymbols": {
       "StorageLibrary": [
-        209
+        352
       ]
     },
-    "id": 210,
+    "id": 353,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 58,
+        "id": 201,
         "literals": [
           "solidity",
           "^",
@@ -147,7 +147,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:7"
       },
       {
         "baseContracts": [],
@@ -155,9 +155,9 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 209,
+        "id": 352,
         "linearizedBaseContracts": [
-          209
+          352
         ],
         "name": "StorageLibrary",
         "nodeType": "ContractDefinition",
@@ -165,21 +165,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 64,
+            "id": 207,
             "name": "FilledStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 63,
+              "id": 206,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 60,
+                  "id": 203,
                   "indexed": false,
                   "name": "amountAdded",
                   "nodeType": "VariableDeclaration",
-                  "scope": 64,
-                  "src": "76:16:1",
+                  "scope": 207,
+                  "src": "76:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -187,10 +187,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 59,
+                    "id": 202,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "76:4:1",
+                    "src": "76:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -201,12 +201,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 62,
+                  "id": 205,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 64,
-                  "src": "94:18:1",
+                  "scope": 207,
+                  "src": "94:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -214,10 +214,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 61,
+                    "id": 204,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "94:4:1",
+                    "src": "94:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -227,28 +227,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "75:38:1"
+              "src": "75:38:7"
             },
-            "src": "56:58:1"
+            "src": "56:58:7"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 70,
+            "id": 213,
             "name": "DrankStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 69,
+              "id": 212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 66,
+                  "id": 209,
                   "indexed": false,
                   "name": "amountDrank",
                   "nodeType": "VariableDeclaration",
-                  "scope": 70,
-                  "src": "138:16:1",
+                  "scope": 213,
+                  "src": "138:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -256,10 +256,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 65,
+                    "id": 208,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "138:4:1",
+                    "src": "138:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -270,12 +270,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 68,
+                  "id": 211,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 70,
-                  "src": "156:18:1",
+                  "scope": 213,
+                  "src": "156:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -283,10 +283,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 67,
+                    "id": 210,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "156:4:1",
+                    "src": "156:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -296,21 +296,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "137:38:1"
+              "src": "137:38:7"
             },
-            "src": "119:57:1"
+            "src": "119:57:7"
           },
           {
             "canonicalName": "StorageLibrary.StorageInstance",
-            "id": 77,
+            "id": 220,
             "members": [
               {
                 "constant": false,
-                "id": 72,
+                "id": 215,
                 "name": "fillAmount",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "215:15:1",
+                "scope": 220,
+                "src": "215:15:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -318,10 +318,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 71,
+                  "id": 214,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "215:4:1",
+                  "src": "215:4:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -332,11 +332,11 @@
               },
               {
                 "constant": false,
-                "id": 74,
+                "id": 217,
                 "name": "capacity",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "240:13:1",
+                "scope": 220,
+                "src": "240:13:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -344,10 +344,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 73,
+                  "id": 216,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "240:4:1",
+                  "src": "240:4:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -358,11 +358,11 @@
               },
               {
                 "constant": false,
-                "id": 76,
+                "id": 219,
                 "name": "flavor",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "263:13:1",
+                "scope": 220,
+                "src": "263:13:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -370,10 +370,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 75,
+                  "id": 218,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "263:6:1",
+                  "src": "263:6:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -385,15 +385,15 @@
             ],
             "name": "StorageInstance",
             "nodeType": "StructDefinition",
-            "scope": 209,
-            "src": "182:101:1",
+            "scope": 352,
+            "src": "182:101:7",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 117,
+              "id": 260,
               "nodeType": "Block",
-              "src": "412:210:1",
+              "src": "412:210:7",
               "statements": [
                 {
                   "expression": {
@@ -405,7 +405,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 95,
+                        "id": 238,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -416,19 +416,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 91,
+                          "id": 234,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 89,
+                            "id": 232,
                             "name": "_fillAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 83,
-                            "src": "430:11:1",
+                            "referencedDeclaration": 226,
+                            "src": "430:11:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -438,18 +438,18 @@
                           "operator": "<=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 90,
+                            "id": 233,
                             "name": "_capacity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 85,
-                            "src": "445:9:1",
+                            "referencedDeclaration": 228,
+                            "src": "445:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "430:24:1",
+                          "src": "430:24:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -463,19 +463,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 94,
+                          "id": 237,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 92,
+                            "id": 235,
                             "name": "_capacity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 85,
-                            "src": "458:9:1",
+                            "referencedDeclaration": 228,
+                            "src": "458:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -486,14 +486,14 @@
                           "rightExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 93,
+                            "id": 236,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "470:1:1",
+                            "src": "470:1:7",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
@@ -501,13 +501,13 @@
                             },
                             "value": "0"
                           },
-                          "src": "458:13:1",
+                          "src": "458:13:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "430:41:1",
+                        "src": "430:41:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -516,14 +516,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f756e74",
-                        "id": 96,
+                        "id": 239,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "472:37:1",
+                        "src": "472:37:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_9d9b3abdb791dfcf0bf70da37e63de4c4e3e1e3a68b63bb009f2a44792603fd1",
@@ -543,21 +543,21 @@
                           "typeString": "literal_string \"not enough capacity for fill amount\""
                         }
                       ],
-                      "id": 88,
+                      "id": 231,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "422:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "422:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 97,
+                    "id": 240,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -565,20 +565,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "422:88:1",
+                    "src": "422:88:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 98,
+                  "id": 241,
                   "nodeType": "ExpressionStatement",
-                  "src": "422:88:1"
+                  "src": "422:88:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 103,
+                    "id": 246,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -587,26 +587,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 99,
+                        "id": 242,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "520:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "520:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 101,
+                      "id": 244,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "flavor",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 76,
-                      "src": "520:11:1",
+                      "referencedDeclaration": 219,
+                      "src": "520:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -616,31 +616,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 102,
+                      "id": 245,
                       "name": "_flavor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 81,
-                      "src": "534:7:1",
+                      "referencedDeclaration": 224,
+                      "src": "534:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "520:21:1",
+                    "src": "520:21:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 104,
+                  "id": 247,
                   "nodeType": "ExpressionStatement",
-                  "src": "520:21:1"
+                  "src": "520:21:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 109,
+                    "id": 252,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -649,26 +649,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 105,
+                        "id": 248,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "551:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "551:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 107,
+                      "id": 250,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "551:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "551:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -678,31 +678,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 108,
+                      "id": 251,
                       "name": "_fillAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 83,
-                      "src": "569:11:1",
+                      "referencedDeclaration": 226,
+                      "src": "569:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "551:29:1",
+                    "src": "551:29:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 110,
+                  "id": 253,
                   "nodeType": "ExpressionStatement",
-                  "src": "551:29:1"
+                  "src": "551:29:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 115,
+                    "id": 258,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -711,26 +711,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 111,
+                        "id": 254,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "590:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "590:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 113,
+                      "id": 256,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "capacity",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 74,
-                      "src": "590:13:1",
+                      "referencedDeclaration": 217,
+                      "src": "590:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -740,31 +740,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 114,
+                      "id": 257,
                       "name": "_capacity",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 85,
-                      "src": "606:9:1",
+                      "referencedDeclaration": 228,
+                      "src": "606:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "590:25:1",
+                    "src": "590:25:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 116,
+                  "id": 259,
                   "nodeType": "ExpressionStatement",
-                  "src": "590:25:1"
+                  "src": "590:25:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 118,
+            "id": 261,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -772,31 +772,31 @@
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 86,
+              "id": 229,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 79,
+                  "id": 222,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "312:28:1",
+                  "scope": 261,
+                  "src": "312:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 78,
+                    "id": 221,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "312:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "312:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -805,11 +805,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 81,
+                  "id": 224,
                   "name": "_flavor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "350:14:1",
+                  "scope": 261,
+                  "src": "350:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -817,10 +817,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 80,
+                    "id": 223,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "350:6:1",
+                    "src": "350:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -831,11 +831,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 83,
+                  "id": 226,
                   "name": "_fillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "366:16:1",
+                  "scope": 261,
+                  "src": "366:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -843,10 +843,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 82,
+                    "id": 225,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "366:4:1",
+                    "src": "366:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -857,11 +857,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 85,
+                  "id": 228,
                   "name": "_capacity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "384:14:1",
+                  "scope": 261,
+                  "src": "384:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -869,10 +869,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 84,
+                    "id": 227,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "384:4:1",
+                    "src": "384:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -882,39 +882,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "302:102:1"
+              "src": "302:102:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 87,
+              "id": 230,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "412:0:1"
+              "src": "412:0:7"
             },
-            "scope": 209,
-            "src": "289:333:1",
+            "scope": 352,
+            "src": "289:333:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 156,
+              "id": 299,
               "nodeType": "Block",
-              "src": "696:250:1",
+              "src": "696:250:7",
               "statements": [
                 {
                   "assignments": [
-                    126
+                    269
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 126,
+                      "id": 269,
                       "name": "newAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 157,
-                      "src": "706:14:1",
+                      "scope": 300,
+                      "src": "706:14:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -922,10 +922,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 125,
+                        "id": 268,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "706:4:1",
+                        "src": "706:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -935,14 +935,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 131,
+                  "id": 274,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 130,
+                    "id": 273,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -951,26 +951,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 127,
+                        "id": 270,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 120,
-                        "src": "723:4:1",
+                        "referencedDeclaration": 263,
+                        "src": "723:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 128,
+                      "id": 271,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "723:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "723:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -980,25 +980,25 @@
                     "operator": "+",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 129,
+                      "id": 272,
                       "name": "amountToAdd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 122,
-                      "src": "741:11:1",
+                      "referencedDeclaration": 265,
+                      "src": "741:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "723:29:1",
+                    "src": "723:29:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "706:46:1"
+                  "src": "706:46:7"
                 },
                 {
                   "expression": {
@@ -1010,7 +1010,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 141,
+                        "id": 284,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1021,19 +1021,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 136,
+                          "id": 279,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 133,
+                            "id": 276,
                             "name": "newAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 126,
-                            "src": "770:9:1",
+                            "referencedDeclaration": 269,
+                            "src": "770:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1045,32 +1045,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 134,
+                              "id": 277,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 120,
-                              "src": "782:4:1",
+                              "referencedDeclaration": 263,
+                              "src": "782:4:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                                "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                                 "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                               }
                             },
-                            "id": 135,
+                            "id": 278,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "fillAmount",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 72,
-                            "src": "782:15:1",
+                            "referencedDeclaration": 215,
+                            "src": "782:15:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "770:27:1",
+                          "src": "770:27:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -1084,19 +1084,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 140,
+                          "id": 283,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 137,
+                            "id": 280,
                             "name": "newAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 126,
-                            "src": "801:9:1",
+                            "referencedDeclaration": 269,
+                            "src": "801:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1108,38 +1108,38 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 138,
+                              "id": 281,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 120,
-                              "src": "814:4:1",
+                              "referencedDeclaration": 263,
+                              "src": "814:4:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                                "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                                 "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                               }
                             },
-                            "id": 139,
+                            "id": 282,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "capacity",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 74,
-                            "src": "814:13:1",
+                            "referencedDeclaration": 217,
+                            "src": "814:13:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "801:26:1",
+                          "src": "801:26:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "770:57:1",
+                        "src": "770:57:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1148,14 +1148,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f756768206361706163697479",
-                        "id": 142,
+                        "id": 285,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "828:21:1",
+                        "src": "828:21:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_09eae9d657bfdfb8f2b7f3ae92d95934177c0aad666379c1f3f2b02d4abeca56",
@@ -1175,21 +1175,21 @@
                           "typeString": "literal_string \"not enough capacity\""
                         }
                       ],
-                      "id": 132,
+                      "id": 275,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "762:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "762:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 143,
+                    "id": 286,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1197,20 +1197,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "762:88:1",
+                    "src": "762:88:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 144,
+                  "id": 287,
                   "nodeType": "ExpressionStatement",
-                  "src": "762:88:1"
+                  "src": "762:88:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 149,
+                    "id": 292,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1219,26 +1219,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 145,
+                        "id": 288,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 120,
-                        "src": "860:4:1",
+                        "referencedDeclaration": 263,
+                        "src": "860:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 147,
+                      "id": 290,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "860:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "860:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1248,26 +1248,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 148,
+                      "id": 291,
                       "name": "newAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 126,
-                      "src": "878:9:1",
+                      "referencedDeclaration": 269,
+                      "src": "878:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "860:27:1",
+                    "src": "860:27:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 150,
+                  "id": 293,
                   "nodeType": "ExpressionStatement",
-                  "src": "860:27:1"
+                  "src": "860:27:7"
                 },
                 {
                   "eventCall": {
@@ -1275,12 +1275,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 152,
+                        "id": 295,
                         "name": "amountToAdd",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 122,
-                        "src": "916:11:1",
+                        "referencedDeclaration": 265,
+                        "src": "916:11:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1288,12 +1288,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 153,
+                        "id": 296,
                         "name": "newAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "929:9:1",
+                        "referencedDeclaration": 269,
+                        "src": "929:9:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1311,18 +1311,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 151,
+                      "id": 294,
                       "name": "FilledStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 64,
-                      "src": "902:13:1",
+                      "referencedDeclaration": 207,
+                      "src": "902:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 154,
+                    "id": 297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1330,20 +1330,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "902:37:1",
+                    "src": "902:37:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 155,
+                  "id": 298,
                   "nodeType": "EmitStatement",
-                  "src": "897:42:1"
+                  "src": "897:42:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 157,
+            "id": 300,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1351,31 +1351,31 @@
             "name": "fill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 123,
+              "id": 266,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 120,
+                  "id": 263,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 157,
-                  "src": "641:28:1",
+                  "scope": 300,
+                  "src": "641:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 119,
+                    "id": 262,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "641:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "641:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -1384,11 +1384,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 122,
+                  "id": 265,
                   "name": "amountToAdd",
                   "nodeType": "VariableDeclaration",
-                  "scope": 157,
-                  "src": "671:16:1",
+                  "scope": 300,
+                  "src": "671:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1396,10 +1396,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 121,
+                    "id": 264,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "671:4:1",
+                    "src": "671:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1409,39 +1409,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "640:48:1"
+              "src": "640:48:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 124,
+              "id": 267,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "696:0:1"
+              "src": "696:0:7"
             },
-            "scope": 209,
-            "src": "627:319:1",
+            "scope": 352,
+            "src": "627:319:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 196,
+              "id": 339,
               "nodeType": "Block",
-              "src": "1042:329:1",
+              "src": "1042:329:7",
               "statements": [
                 {
                   "assignments": [
-                    167
+                    310
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 167,
+                      "id": 310,
                       "name": "newAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 197,
-                      "src": "1052:14:1",
+                      "scope": 340,
+                      "src": "1052:14:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1449,10 +1449,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 166,
+                        "id": 309,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1052:4:1",
+                        "src": "1052:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1462,14 +1462,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 172,
+                  "id": 315,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 171,
+                    "id": 314,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1478,26 +1478,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 168,
+                        "id": 311,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 159,
-                        "src": "1069:4:1",
+                        "referencedDeclaration": 302,
+                        "src": "1069:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 169,
+                      "id": 312,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "1069:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "1069:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1507,25 +1507,25 @@
                     "operator": "-",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 170,
+                      "id": 313,
                       "name": "amountToDrink",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 161,
-                      "src": "1087:13:1",
+                      "referencedDeclaration": 304,
+                      "src": "1087:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1069:31:1",
+                    "src": "1069:31:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1052:48:1"
+                  "src": "1052:48:7"
                 },
                 {
                   "expression": {
@@ -1537,19 +1537,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 177,
+                        "id": 320,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 174,
+                          "id": 317,
                           "name": "newAmount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 167,
-                          "src": "1118:9:1",
+                          "referencedDeclaration": 310,
+                          "src": "1118:9:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1561,32 +1561,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 175,
+                            "id": 318,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 159,
-                            "src": "1130:4:1",
+                            "referencedDeclaration": 302,
+                            "src": "1130:4:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                              "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                               "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                             }
                           },
-                          "id": 176,
+                          "id": 319,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "fillAmount",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 72,
-                          "src": "1130:15:1",
+                          "referencedDeclaration": 215,
+                          "src": "1130:15:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "1118:27:1",
+                        "src": "1118:27:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1595,14 +1595,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f75676820746f206472696e6b",
-                        "id": 178,
+                        "id": 321,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1146:21:1",
+                        "src": "1146:21:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d8861a27fb8831253633fac35a559dbbd15ddcd0aca58380fc4bc838687974cf",
@@ -1622,21 +1622,21 @@
                           "typeString": "literal_string \"not enough to drink\""
                         }
                       ],
-                      "id": 173,
+                      "id": 316,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "1110:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "1110:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 179,
+                    "id": 322,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1644,20 +1644,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1110:58:1",
+                    "src": "1110:58:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 180,
+                  "id": 323,
                   "nodeType": "ExpressionStatement",
-                  "src": "1110:58:1"
+                  "src": "1110:58:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 185,
+                    "id": 328,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1666,26 +1666,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 181,
+                        "id": 324,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 159,
-                        "src": "1178:4:1",
+                        "referencedDeclaration": 302,
+                        "src": "1178:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 183,
+                      "id": 326,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "1178:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "1178:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1695,26 +1695,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 184,
+                      "id": 327,
                       "name": "newAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 167,
-                      "src": "1196:9:1",
+                      "referencedDeclaration": 310,
+                      "src": "1196:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1178:27:1",
+                    "src": "1178:27:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 186,
+                  "id": 329,
                   "nodeType": "ExpressionStatement",
-                  "src": "1178:27:1"
+                  "src": "1178:27:7"
                 },
                 {
                   "eventCall": {
@@ -1722,12 +1722,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 188,
+                        "id": 331,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 161,
-                        "src": "1233:13:1",
+                        "referencedDeclaration": 304,
+                        "src": "1233:13:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1735,12 +1735,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 332,
                         "name": "newAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 167,
-                        "src": "1248:9:1",
+                        "referencedDeclaration": 310,
+                        "src": "1248:9:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1758,18 +1758,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 187,
+                      "id": 330,
                       "name": "DrankStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 70,
-                      "src": "1220:12:1",
+                      "referencedDeclaration": 213,
+                      "src": "1220:12:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 190,
+                    "id": 333,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1777,15 +1777,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1220:38:1",
+                    "src": "1220:38:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 191,
+                  "id": 334,
                   "nodeType": "EmitStatement",
-                  "src": "1215:43:1"
+                  "src": "1215:43:7"
                 },
                 {
                   "expression": {
@@ -1793,12 +1793,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 193,
+                        "id": 336,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 161,
-                        "src": "1350:13:1",
+                        "referencedDeclaration": 304,
+                        "src": "1350:13:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1812,18 +1812,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 192,
+                      "id": 335,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 281,
-                      "src": "1340:9:1",
+                      "referencedDeclaration": 539,
+                      "src": "1340:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 194,
+                    "id": 337,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1831,21 +1831,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1340:24:1",
+                    "src": "1340:24:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 165,
-                  "id": 195,
+                  "functionReturnParameters": 308,
+                  "id": 338,
                   "nodeType": "Return",
-                  "src": "1333:31:1"
+                  "src": "1333:31:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 197,
+            "id": 340,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1853,31 +1853,31 @@
             "name": "drink",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 162,
+              "id": 305,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 159,
+                  "id": 302,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "967:28:1",
+                  "scope": 340,
+                  "src": "967:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 158,
+                    "id": 301,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "967:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "967:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -1886,11 +1886,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 161,
+                  "id": 304,
                   "name": "amountToDrink",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "997:18:1",
+                  "scope": 340,
+                  "src": "997:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1898,10 +1898,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 160,
+                    "id": 303,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "997:4:1",
+                    "src": "997:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1911,20 +1911,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "966:50:1"
+              "src": "966:50:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 165,
+              "id": 308,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 164,
+                  "id": 307,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "1033:7:1",
+                  "scope": 340,
+                  "src": "1033:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1932,10 +1932,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 163,
+                    "id": 306,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1033:7:1",
+                    "src": "1033:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1945,59 +1945,59 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1032:9:1"
+              "src": "1032:9:7"
             },
-            "scope": 209,
-            "src": "952:419:1",
+            "scope": 352,
+            "src": "952:419:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 207,
+              "id": 350,
               "nodeType": "Block",
-              "src": "1454:39:1",
+              "src": "1454:39:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 204,
+                      "id": 347,
                       "name": "self",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 199,
-                      "src": "1471:4:1",
+                      "referencedDeclaration": 342,
+                      "src": "1471:4:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                        "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                         "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                       }
                     },
-                    "id": 205,
+                    "id": 348,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "fillAmount",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 72,
-                    "src": "1471:15:1",
+                    "referencedDeclaration": 215,
+                    "src": "1471:15:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 203,
-                  "id": 206,
+                  "functionReturnParameters": 346,
+                  "id": 349,
                   "nodeType": "Return",
-                  "src": "1464:22:1"
+                  "src": "1464:22:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 208,
+            "id": 351,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2005,31 +2005,31 @@
             "name": "fillAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 200,
+              "id": 343,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 199,
+                  "id": 342,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 208,
-                  "src": "1397:28:1",
+                  "scope": 351,
+                  "src": "1397:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 198,
+                    "id": 341,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "1397:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "1397:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -2037,20 +2037,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1396:30:1"
+              "src": "1396:30:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 203,
+              "id": 346,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 202,
+                  "id": 345,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 208,
-                  "src": "1448:4:1",
+                  "scope": 351,
+                  "src": "1448:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2058,10 +2058,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 201,
+                    "id": 344,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1448:4:1",
+                    "src": "1448:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2071,33 +2071,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1447:6:1"
+              "src": "1447:6:7"
             },
-            "scope": 209,
-            "src": "1377:116:1",
+            "scope": 352,
+            "src": "1377:116:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 210,
-        "src": "27:1478:1"
+        "scope": 353,
+        "src": "27:1478:7"
       }
     ],
-    "src": "0:1505:1"
+    "src": "0:1505:7"
   },
   "legacyAST": {
-    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage.library.sol",
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/storage/storage.library.sol",
     "exportedSymbols": {
       "StorageLibrary": [
-        209
+        352
       ]
     },
-    "id": 210,
+    "id": 353,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 58,
+        "id": 201,
         "literals": [
           "solidity",
           "^",
@@ -2105,7 +2105,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:7"
       },
       {
         "baseContracts": [],
@@ -2113,9 +2113,9 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 209,
+        "id": 352,
         "linearizedBaseContracts": [
-          209
+          352
         ],
         "name": "StorageLibrary",
         "nodeType": "ContractDefinition",
@@ -2123,21 +2123,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 64,
+            "id": 207,
             "name": "FilledStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 63,
+              "id": 206,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 60,
+                  "id": 203,
                   "indexed": false,
                   "name": "amountAdded",
                   "nodeType": "VariableDeclaration",
-                  "scope": 64,
-                  "src": "76:16:1",
+                  "scope": 207,
+                  "src": "76:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2145,10 +2145,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 59,
+                    "id": 202,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "76:4:1",
+                    "src": "76:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2159,12 +2159,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 62,
+                  "id": 205,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 64,
-                  "src": "94:18:1",
+                  "scope": 207,
+                  "src": "94:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2172,10 +2172,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 61,
+                    "id": 204,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "94:4:1",
+                    "src": "94:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2185,28 +2185,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "75:38:1"
+              "src": "75:38:7"
             },
-            "src": "56:58:1"
+            "src": "56:58:7"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 70,
+            "id": 213,
             "name": "DrankStorage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 69,
+              "id": 212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 66,
+                  "id": 209,
                   "indexed": false,
                   "name": "amountDrank",
                   "nodeType": "VariableDeclaration",
-                  "scope": 70,
-                  "src": "138:16:1",
+                  "scope": 213,
+                  "src": "138:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2214,10 +2214,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 65,
+                    "id": 208,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "138:4:1",
+                    "src": "138:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2228,12 +2228,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 68,
+                  "id": 211,
                   "indexed": false,
                   "name": "newFillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 70,
-                  "src": "156:18:1",
+                  "scope": 213,
+                  "src": "156:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2241,10 +2241,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 67,
+                    "id": 210,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "156:4:1",
+                    "src": "156:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2254,21 +2254,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "137:38:1"
+              "src": "137:38:7"
             },
-            "src": "119:57:1"
+            "src": "119:57:7"
           },
           {
             "canonicalName": "StorageLibrary.StorageInstance",
-            "id": 77,
+            "id": 220,
             "members": [
               {
                 "constant": false,
-                "id": 72,
+                "id": 215,
                 "name": "fillAmount",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "215:15:1",
+                "scope": 220,
+                "src": "215:15:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2276,10 +2276,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 71,
+                  "id": 214,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "215:4:1",
+                  "src": "215:4:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2290,11 +2290,11 @@
               },
               {
                 "constant": false,
-                "id": 74,
+                "id": 217,
                 "name": "capacity",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "240:13:1",
+                "scope": 220,
+                "src": "240:13:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2302,10 +2302,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 73,
+                  "id": 216,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "240:4:1",
+                  "src": "240:4:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2316,11 +2316,11 @@
               },
               {
                 "constant": false,
-                "id": 76,
+                "id": 219,
                 "name": "flavor",
                 "nodeType": "VariableDeclaration",
-                "scope": 77,
-                "src": "263:13:1",
+                "scope": 220,
+                "src": "263:13:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2328,10 +2328,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 75,
+                  "id": 218,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "263:6:1",
+                  "src": "263:6:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -2343,15 +2343,15 @@
             ],
             "name": "StorageInstance",
             "nodeType": "StructDefinition",
-            "scope": 209,
-            "src": "182:101:1",
+            "scope": 352,
+            "src": "182:101:7",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 117,
+              "id": 260,
               "nodeType": "Block",
-              "src": "412:210:1",
+              "src": "412:210:7",
               "statements": [
                 {
                   "expression": {
@@ -2363,7 +2363,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 95,
+                        "id": 238,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2374,19 +2374,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 91,
+                          "id": 234,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 89,
+                            "id": 232,
                             "name": "_fillAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 83,
-                            "src": "430:11:1",
+                            "referencedDeclaration": 226,
+                            "src": "430:11:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2396,18 +2396,18 @@
                           "operator": "<=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 90,
+                            "id": 233,
                             "name": "_capacity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 85,
-                            "src": "445:9:1",
+                            "referencedDeclaration": 228,
+                            "src": "445:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "430:24:1",
+                          "src": "430:24:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -2421,19 +2421,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 94,
+                          "id": 237,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 92,
+                            "id": 235,
                             "name": "_capacity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 85,
-                            "src": "458:9:1",
+                            "referencedDeclaration": 228,
+                            "src": "458:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2444,14 +2444,14 @@
                           "rightExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 93,
+                            "id": 236,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "470:1:1",
+                            "src": "470:1:7",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
@@ -2459,13 +2459,13 @@
                             },
                             "value": "0"
                           },
-                          "src": "458:13:1",
+                          "src": "458:13:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "430:41:1",
+                        "src": "430:41:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2474,14 +2474,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f75676820636170616369747920666f722066696c6c20616d6f756e74",
-                        "id": 96,
+                        "id": 239,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "472:37:1",
+                        "src": "472:37:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_9d9b3abdb791dfcf0bf70da37e63de4c4e3e1e3a68b63bb009f2a44792603fd1",
@@ -2501,21 +2501,21 @@
                           "typeString": "literal_string \"not enough capacity for fill amount\""
                         }
                       ],
-                      "id": 88,
+                      "id": 231,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "422:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "422:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 97,
+                    "id": 240,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2523,20 +2523,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "422:88:1",
+                    "src": "422:88:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 98,
+                  "id": 241,
                   "nodeType": "ExpressionStatement",
-                  "src": "422:88:1"
+                  "src": "422:88:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 103,
+                    "id": 246,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2545,26 +2545,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 99,
+                        "id": 242,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "520:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "520:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 101,
+                      "id": 244,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "flavor",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 76,
-                      "src": "520:11:1",
+                      "referencedDeclaration": 219,
+                      "src": "520:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -2574,31 +2574,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 102,
+                      "id": 245,
                       "name": "_flavor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 81,
-                      "src": "534:7:1",
+                      "referencedDeclaration": 224,
+                      "src": "534:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "520:21:1",
+                    "src": "520:21:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 104,
+                  "id": 247,
                   "nodeType": "ExpressionStatement",
-                  "src": "520:21:1"
+                  "src": "520:21:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 109,
+                    "id": 252,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2607,26 +2607,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 105,
+                        "id": 248,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "551:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "551:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 107,
+                      "id": 250,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "551:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "551:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2636,31 +2636,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 108,
+                      "id": 251,
                       "name": "_fillAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 83,
-                      "src": "569:11:1",
+                      "referencedDeclaration": 226,
+                      "src": "569:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "551:29:1",
+                    "src": "551:29:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 110,
+                  "id": 253,
                   "nodeType": "ExpressionStatement",
-                  "src": "551:29:1"
+                  "src": "551:29:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 115,
+                    "id": 258,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2669,26 +2669,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 111,
+                        "id": 254,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 79,
-                        "src": "590:4:1",
+                        "referencedDeclaration": 222,
+                        "src": "590:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 113,
+                      "id": 256,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "capacity",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 74,
-                      "src": "590:13:1",
+                      "referencedDeclaration": 217,
+                      "src": "590:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2698,31 +2698,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 114,
+                      "id": 257,
                       "name": "_capacity",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 85,
-                      "src": "606:9:1",
+                      "referencedDeclaration": 228,
+                      "src": "606:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "590:25:1",
+                    "src": "590:25:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 116,
+                  "id": 259,
                   "nodeType": "ExpressionStatement",
-                  "src": "590:25:1"
+                  "src": "590:25:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 118,
+            "id": 261,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2730,31 +2730,31 @@
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 86,
+              "id": 229,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 79,
+                  "id": 222,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "312:28:1",
+                  "scope": 261,
+                  "src": "312:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 78,
+                    "id": 221,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "312:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "312:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -2763,11 +2763,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 81,
+                  "id": 224,
                   "name": "_flavor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "350:14:1",
+                  "scope": 261,
+                  "src": "350:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2775,10 +2775,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 80,
+                    "id": 223,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "350:6:1",
+                    "src": "350:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2789,11 +2789,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 83,
+                  "id": 226,
                   "name": "_fillAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "366:16:1",
+                  "scope": 261,
+                  "src": "366:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2801,10 +2801,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 82,
+                    "id": 225,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "366:4:1",
+                    "src": "366:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2815,11 +2815,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 85,
+                  "id": 228,
                   "name": "_capacity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 118,
-                  "src": "384:14:1",
+                  "scope": 261,
+                  "src": "384:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2827,10 +2827,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 84,
+                    "id": 227,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "384:4:1",
+                    "src": "384:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2840,39 +2840,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "302:102:1"
+              "src": "302:102:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 87,
+              "id": 230,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "412:0:1"
+              "src": "412:0:7"
             },
-            "scope": 209,
-            "src": "289:333:1",
+            "scope": 352,
+            "src": "289:333:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 156,
+              "id": 299,
               "nodeType": "Block",
-              "src": "696:250:1",
+              "src": "696:250:7",
               "statements": [
                 {
                   "assignments": [
-                    126
+                    269
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 126,
+                      "id": 269,
                       "name": "newAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 157,
-                      "src": "706:14:1",
+                      "scope": 300,
+                      "src": "706:14:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2880,10 +2880,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 125,
+                        "id": 268,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "706:4:1",
+                        "src": "706:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2893,14 +2893,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 131,
+                  "id": 274,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 130,
+                    "id": 273,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2909,26 +2909,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 127,
+                        "id": 270,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 120,
-                        "src": "723:4:1",
+                        "referencedDeclaration": 263,
+                        "src": "723:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 128,
+                      "id": 271,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "723:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "723:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2938,25 +2938,25 @@
                     "operator": "+",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 129,
+                      "id": 272,
                       "name": "amountToAdd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 122,
-                      "src": "741:11:1",
+                      "referencedDeclaration": 265,
+                      "src": "741:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "723:29:1",
+                    "src": "723:29:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "706:46:1"
+                  "src": "706:46:7"
                 },
                 {
                   "expression": {
@@ -2968,7 +2968,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 141,
+                        "id": 284,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2979,19 +2979,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 136,
+                          "id": 279,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 133,
+                            "id": 276,
                             "name": "newAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 126,
-                            "src": "770:9:1",
+                            "referencedDeclaration": 269,
+                            "src": "770:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -3003,32 +3003,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 134,
+                              "id": 277,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 120,
-                              "src": "782:4:1",
+                              "referencedDeclaration": 263,
+                              "src": "782:4:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                                "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                                 "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                               }
                             },
-                            "id": 135,
+                            "id": 278,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "fillAmount",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 72,
-                            "src": "782:15:1",
+                            "referencedDeclaration": 215,
+                            "src": "782:15:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "770:27:1",
+                          "src": "770:27:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -3042,19 +3042,19 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 140,
+                          "id": 283,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 137,
+                            "id": 280,
                             "name": "newAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 126,
-                            "src": "801:9:1",
+                            "referencedDeclaration": 269,
+                            "src": "801:9:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -3066,38 +3066,38 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 138,
+                              "id": 281,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 120,
-                              "src": "814:4:1",
+                              "referencedDeclaration": 263,
+                              "src": "814:4:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                                "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                                 "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                               }
                             },
-                            "id": 139,
+                            "id": 282,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "capacity",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 74,
-                            "src": "814:13:1",
+                            "referencedDeclaration": 217,
+                            "src": "814:13:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "801:26:1",
+                          "src": "801:26:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "770:57:1",
+                        "src": "770:57:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3106,14 +3106,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f756768206361706163697479",
-                        "id": 142,
+                        "id": 285,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "828:21:1",
+                        "src": "828:21:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_09eae9d657bfdfb8f2b7f3ae92d95934177c0aad666379c1f3f2b02d4abeca56",
@@ -3133,21 +3133,21 @@
                           "typeString": "literal_string \"not enough capacity\""
                         }
                       ],
-                      "id": 132,
+                      "id": 275,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "762:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "762:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 143,
+                    "id": 286,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3155,20 +3155,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "762:88:1",
+                    "src": "762:88:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 144,
+                  "id": 287,
                   "nodeType": "ExpressionStatement",
-                  "src": "762:88:1"
+                  "src": "762:88:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 149,
+                    "id": 292,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3177,26 +3177,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 145,
+                        "id": 288,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 120,
-                        "src": "860:4:1",
+                        "referencedDeclaration": 263,
+                        "src": "860:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 147,
+                      "id": 290,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "860:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "860:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3206,26 +3206,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 148,
+                      "id": 291,
                       "name": "newAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 126,
-                      "src": "878:9:1",
+                      "referencedDeclaration": 269,
+                      "src": "878:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "860:27:1",
+                    "src": "860:27:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 150,
+                  "id": 293,
                   "nodeType": "ExpressionStatement",
-                  "src": "860:27:1"
+                  "src": "860:27:7"
                 },
                 {
                   "eventCall": {
@@ -3233,12 +3233,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 152,
+                        "id": 295,
                         "name": "amountToAdd",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 122,
-                        "src": "916:11:1",
+                        "referencedDeclaration": 265,
+                        "src": "916:11:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3246,12 +3246,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 153,
+                        "id": 296,
                         "name": "newAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "929:9:1",
+                        "referencedDeclaration": 269,
+                        "src": "929:9:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3269,18 +3269,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 151,
+                      "id": 294,
                       "name": "FilledStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 64,
-                      "src": "902:13:1",
+                      "referencedDeclaration": 207,
+                      "src": "902:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 154,
+                    "id": 297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3288,20 +3288,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "902:37:1",
+                    "src": "902:37:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 155,
+                  "id": 298,
                   "nodeType": "EmitStatement",
-                  "src": "897:42:1"
+                  "src": "897:42:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 157,
+            "id": 300,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3309,31 +3309,31 @@
             "name": "fill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 123,
+              "id": 266,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 120,
+                  "id": 263,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 157,
-                  "src": "641:28:1",
+                  "scope": 300,
+                  "src": "641:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 119,
+                    "id": 262,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "641:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "641:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -3342,11 +3342,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 122,
+                  "id": 265,
                   "name": "amountToAdd",
                   "nodeType": "VariableDeclaration",
-                  "scope": 157,
-                  "src": "671:16:1",
+                  "scope": 300,
+                  "src": "671:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3354,10 +3354,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 121,
+                    "id": 264,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "671:4:1",
+                    "src": "671:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3367,39 +3367,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "640:48:1"
+              "src": "640:48:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 124,
+              "id": 267,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "696:0:1"
+              "src": "696:0:7"
             },
-            "scope": 209,
-            "src": "627:319:1",
+            "scope": 352,
+            "src": "627:319:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 196,
+              "id": 339,
               "nodeType": "Block",
-              "src": "1042:329:1",
+              "src": "1042:329:7",
               "statements": [
                 {
                   "assignments": [
-                    167
+                    310
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 167,
+                      "id": 310,
                       "name": "newAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 197,
-                      "src": "1052:14:1",
+                      "scope": 340,
+                      "src": "1052:14:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3407,10 +3407,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 166,
+                        "id": 309,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1052:4:1",
+                        "src": "1052:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3420,14 +3420,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 172,
+                  "id": 315,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 171,
+                    "id": 314,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3436,26 +3436,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 168,
+                        "id": 311,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 159,
-                        "src": "1069:4:1",
+                        "referencedDeclaration": 302,
+                        "src": "1069:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 169,
+                      "id": 312,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "1069:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "1069:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3465,25 +3465,25 @@
                     "operator": "-",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 170,
+                      "id": 313,
                       "name": "amountToDrink",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 161,
-                      "src": "1087:13:1",
+                      "referencedDeclaration": 304,
+                      "src": "1087:13:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1069:31:1",
+                    "src": "1069:31:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1052:48:1"
+                  "src": "1052:48:7"
                 },
                 {
                   "expression": {
@@ -3495,19 +3495,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 177,
+                        "id": 320,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 174,
+                          "id": 317,
                           "name": "newAmount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 167,
-                          "src": "1118:9:1",
+                          "referencedDeclaration": 310,
+                          "src": "1118:9:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -3519,32 +3519,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 175,
+                            "id": 318,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 159,
-                            "src": "1130:4:1",
+                            "referencedDeclaration": 302,
+                            "src": "1130:4:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                              "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                               "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                             }
                           },
-                          "id": 176,
+                          "id": 319,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "fillAmount",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 72,
-                          "src": "1130:15:1",
+                          "referencedDeclaration": 215,
+                          "src": "1130:15:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "1118:27:1",
+                        "src": "1118:27:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3553,14 +3553,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6e6f7420656e6f75676820746f206472696e6b",
-                        "id": 178,
+                        "id": 321,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1146:21:1",
+                        "src": "1146:21:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d8861a27fb8831253633fac35a559dbbd15ddcd0aca58380fc4bc838687974cf",
@@ -3580,21 +3580,21 @@
                           "typeString": "literal_string \"not enough to drink\""
                         }
                       ],
-                      "id": 173,
+                      "id": 316,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        290,
-                        291
+                        548,
+                        549
                       ],
-                      "referencedDeclaration": 291,
-                      "src": "1110:7:1",
+                      "referencedDeclaration": 549,
+                      "src": "1110:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 179,
+                    "id": 322,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3602,20 +3602,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1110:58:1",
+                    "src": "1110:58:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 180,
+                  "id": 323,
                   "nodeType": "ExpressionStatement",
-                  "src": "1110:58:1"
+                  "src": "1110:58:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 185,
+                    "id": 328,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3624,26 +3624,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 181,
+                        "id": 324,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 159,
-                        "src": "1178:4:1",
+                        "referencedDeclaration": 302,
+                        "src": "1178:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                          "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                           "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                         }
                       },
-                      "id": 183,
+                      "id": 326,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "fillAmount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 72,
-                      "src": "1178:15:1",
+                      "referencedDeclaration": 215,
+                      "src": "1178:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3653,26 +3653,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 184,
+                      "id": 327,
                       "name": "newAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 167,
-                      "src": "1196:9:1",
+                      "referencedDeclaration": 310,
+                      "src": "1196:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1178:27:1",
+                    "src": "1178:27:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 186,
+                  "id": 329,
                   "nodeType": "ExpressionStatement",
-                  "src": "1178:27:1"
+                  "src": "1178:27:7"
                 },
                 {
                   "eventCall": {
@@ -3680,12 +3680,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 188,
+                        "id": 331,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 161,
-                        "src": "1233:13:1",
+                        "referencedDeclaration": 304,
+                        "src": "1233:13:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3693,12 +3693,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 332,
                         "name": "newAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 167,
-                        "src": "1248:9:1",
+                        "referencedDeclaration": 310,
+                        "src": "1248:9:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3716,18 +3716,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 187,
+                      "id": 330,
                       "name": "DrankStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 70,
-                      "src": "1220:12:1",
+                      "referencedDeclaration": 213,
+                      "src": "1220:12:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
                       }
                     },
-                    "id": 190,
+                    "id": 333,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3735,15 +3735,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1220:38:1",
+                    "src": "1220:38:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 191,
+                  "id": 334,
                   "nodeType": "EmitStatement",
-                  "src": "1215:43:1"
+                  "src": "1215:43:7"
                 },
                 {
                   "expression": {
@@ -3751,12 +3751,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 193,
+                        "id": 336,
                         "name": "amountToDrink",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 161,
-                        "src": "1350:13:1",
+                        "referencedDeclaration": 304,
+                        "src": "1350:13:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3770,18 +3770,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 192,
+                      "id": 335,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 281,
-                      "src": "1340:9:1",
+                      "referencedDeclaration": 539,
+                      "src": "1340:9:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 194,
+                    "id": 337,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3789,21 +3789,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1340:24:1",
+                    "src": "1340:24:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 165,
-                  "id": 195,
+                  "functionReturnParameters": 308,
+                  "id": 338,
                   "nodeType": "Return",
-                  "src": "1333:31:1"
+                  "src": "1333:31:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 197,
+            "id": 340,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3811,31 +3811,31 @@
             "name": "drink",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 162,
+              "id": 305,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 159,
+                  "id": 302,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "967:28:1",
+                  "scope": 340,
+                  "src": "967:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 158,
+                    "id": 301,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "967:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "967:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -3844,11 +3844,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 161,
+                  "id": 304,
                   "name": "amountToDrink",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "997:18:1",
+                  "scope": 340,
+                  "src": "997:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3856,10 +3856,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 160,
+                    "id": 303,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "997:4:1",
+                    "src": "997:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3869,20 +3869,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "966:50:1"
+              "src": "966:50:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 165,
+              "id": 308,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 164,
+                  "id": 307,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 197,
-                  "src": "1033:7:1",
+                  "scope": 340,
+                  "src": "1033:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3890,10 +3890,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 163,
+                    "id": 306,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1033:7:1",
+                    "src": "1033:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3903,59 +3903,59 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1032:9:1"
+              "src": "1032:9:7"
             },
-            "scope": 209,
-            "src": "952:419:1",
+            "scope": 352,
+            "src": "952:419:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 207,
+              "id": 350,
               "nodeType": "Block",
-              "src": "1454:39:1",
+              "src": "1454:39:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 204,
+                      "id": 347,
                       "name": "self",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 199,
-                      "src": "1471:4:1",
+                      "referencedDeclaration": 342,
+                      "src": "1471:4:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                        "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                         "typeString": "struct StorageLibrary.StorageInstance storage pointer"
                       }
                     },
-                    "id": 205,
+                    "id": 348,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "fillAmount",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 72,
-                    "src": "1471:15:1",
+                    "referencedDeclaration": 215,
+                    "src": "1471:15:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 203,
-                  "id": 206,
+                  "functionReturnParameters": 346,
+                  "id": 349,
                   "nodeType": "Return",
-                  "src": "1464:22:1"
+                  "src": "1464:22:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 208,
+            "id": 351,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3963,31 +3963,31 @@
             "name": "fillAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 200,
+              "id": 343,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 199,
+                  "id": 342,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 208,
-                  "src": "1397:28:1",
+                  "scope": 351,
+                  "src": "1397:28:7",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                    "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                     "typeString": "struct StorageLibrary.StorageInstance"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 198,
+                    "id": 341,
                     "name": "StorageInstance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 77,
-                    "src": "1397:15:1",
+                    "referencedDeclaration": 220,
+                    "src": "1397:15:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StorageInstance_$77_storage_ptr",
+                      "typeIdentifier": "t_struct$_StorageInstance_$220_storage_ptr",
                       "typeString": "struct StorageLibrary.StorageInstance"
                     }
                   },
@@ -3995,20 +3995,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1396:30:1"
+              "src": "1396:30:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 203,
+              "id": 346,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 202,
+                  "id": 345,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 208,
-                  "src": "1448:4:1",
+                  "scope": 351,
+                  "src": "1448:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4016,10 +4016,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 201,
+                    "id": 344,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1448:4:1",
+                    "src": "1448:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4029,20 +4029,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1447:6:1"
+              "src": "1447:6:7"
             },
-            "scope": 209,
-            "src": "1377:116:1",
+            "scope": 352,
+            "src": "1377:116:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 210,
-        "src": "27:1478:1"
+        "scope": 353,
+        "src": "27:1478:7"
       }
     ],
-    "src": "0:1505:1"
+    "src": "0:1505:7"
   },
   "compiler": {
     "name": "solc",
@@ -4050,7 +4050,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-06T01:50:14.049Z",
+  "updatedAt": "2019-03-17T16:19:07.281Z",
   "devdoc": {
     "methods": {}
   },

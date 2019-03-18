@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "./proxy.sol";
+import "../proxy/proxy.sol";
 import "./updatable.proxy.shared.sol";
 
 contract UpdatableProxy is Proxy, UpdatableProxyShared {

@@ -1,0 +1,231 @@
+{
+  "contractName": "UpdatableProxyData",
+  "abi": [],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"../proxy/proxy.data.sol\";\nimport \"../ownable/ownable.data.sol\";\n\ncontract UpdatableProxyData is ProxyData, OwnableData {}\n",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.data.sol",
+  "ast": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.data.sol",
+    "exportedSymbols": {
+      "UpdatableProxyData": [
+        476
+      ]
+    },
+    "id": 477,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 469,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
+        "file": "../proxy/proxy.data.sol",
+        "id": 470,
+        "nodeType": "ImportDirective",
+        "scope": 477,
+        "sourceUnit": 151,
+        "src": "26:33:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/ownable/ownable.data.sol",
+        "file": "../ownable/ownable.data.sol",
+        "id": 471,
+        "nodeType": "ImportDirective",
+        "scope": 477,
+        "sourceUnit": 128,
+        "src": "60:37:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 472,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 150,
+              "src": "130:9:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$150",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 473,
+            "nodeType": "InheritanceSpecifier",
+            "src": "130:9:10"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 474,
+              "name": "OwnableData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 127,
+              "src": "141:11:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_OwnableData_$127",
+                "typeString": "contract OwnableData"
+              }
+            },
+            "id": 475,
+            "nodeType": "InheritanceSpecifier",
+            "src": "141:11:10"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          150
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 476,
+        "linearizedBaseContracts": [
+          476,
+          127,
+          150
+        ],
+        "name": "UpdatableProxyData",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 477,
+        "src": "99:56:10"
+      }
+    ],
+    "src": "0:156:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/upgradeable/updatable.proxy.data.sol",
+    "exportedSymbols": {
+      "UpdatableProxyData": [
+        476
+      ]
+    },
+    "id": 477,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 469,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
+        "file": "../proxy/proxy.data.sol",
+        "id": 470,
+        "nodeType": "ImportDirective",
+        "scope": 477,
+        "sourceUnit": 151,
+        "src": "26:33:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/ownable/ownable.data.sol",
+        "file": "../ownable/ownable.data.sol",
+        "id": 471,
+        "nodeType": "ImportDirective",
+        "scope": 477,
+        "sourceUnit": 128,
+        "src": "60:37:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 472,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 150,
+              "src": "130:9:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$150",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 473,
+            "nodeType": "InheritanceSpecifier",
+            "src": "130:9:10"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 474,
+              "name": "OwnableData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 127,
+              "src": "141:11:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_OwnableData_$127",
+                "typeString": "contract OwnableData"
+              }
+            },
+            "id": 475,
+            "nodeType": "InheritanceSpecifier",
+            "src": "141:11:10"
+          }
+        ],
+        "contractDependencies": [
+          127,
+          150
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 476,
+        "linearizedBaseContracts": [
+          476,
+          127,
+          150
+        ],
+        "name": "UpdatableProxyData",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 477,
+        "src": "99:56:10"
+      }
+    ],
+    "src": "0:156:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-17T16:19:07.282Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

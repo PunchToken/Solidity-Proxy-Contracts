@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "./proxy.data.sol";
+import "../proxy/proxy.data.sol";
 
 contract StorageData is ProxyData {
     event FilledStorage(uint amountAdded, uint newFillAmount);

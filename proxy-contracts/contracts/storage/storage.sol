@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 import "./storage.library.sol";
 import "./storage.data.sol";
-import "./proxy.data.sol";
+import "../proxy/proxy.data.sol";
 
 
 contract Storage is StorageData {

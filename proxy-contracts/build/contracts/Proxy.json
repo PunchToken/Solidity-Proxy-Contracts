@@ -18,24 +18,24 @@
       "type": "fallback"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516020806100fc83398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050607a806100826000396000f300608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690506040513660008237602081368385600019f48060008114604957602083f35b602083fd00a165627a7a72305820bf4635e90cb222565ebcde6681f9fa060d68816a54f1df0f307ebe093ef251b00029",
-  "deployedBytecode": "0x608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690506040513660008237602081368385600019f48060008114604957602083f35b602083fd00a165627a7a72305820bf4635e90cb222565ebcde6681f9fa060d68816a54f1df0f307ebe093ef251b00029",
-  "sourceMap": "54:539:2:-;;;88:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;88:72:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;145:8;135:7;;:18;;;;;;;;;;;;;;;;;;88:72;54:539;;;;;;",
-  "deployedSourceMap": "54:539:2:-;;;205:12;220:7;;;;;;;;;;;205:22;;286:4;280:11;334:14;331:1;317:12;304:45;448:2;434:12;418:14;404:12;398:4;394:1;390:6;377:74;471:7;496:1;491:35;;;;570:2;556:12;549:24;491:35;521:2;507:12;500:24",
-  "source": "pragma solidity ^0.4.23;\n\nimport \"./proxy.data.sol\";\n\ncontract Proxy is ProxyData {\n    constructor(address _proxied) public {\n        proxied = _proxied;\n    }\n\n    function () external payable {\n        address addr = proxied;\n        assembly {\n            let freememstart := mload(0x40)\n            calldatacopy(freememstart, 0, calldatasize())\n            let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, 32)\n            switch success\n            case 0 { revert(freememstart, 32) }\n            default { return(freememstart, 32) }\n        }\n    }\n}",
-  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806100f983398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506077806100826000396000f300608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f480600081146047573d83f35b3d83fd00a165627a7a72305820805b9339eb4dac53ad0594d2bea4df3ba4e5ea9191146c72a180d41045633b770029",
+  "deployedBytecode": "0x608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f480600081146047573d83f35b3d83fd00a165627a7a72305820805b9339eb4dac53ad0594d2bea4df3ba4e5ea9191146c72a180d41045633b770029",
+  "sourceMap": "54:581:5:-;;;88:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;88:72:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;145:8;135:7;;:18;;;;;;;;;;;;;;;;;;88:72;54:581;;;;;;",
+  "deployedSourceMap": "54:581:5:-;;;205:12;220:7;;;;;;;;;;;205:22;;286:4;280:11;334:14;331:1;317:12;304:45;448:16;434:12;418:14;404:12;398:4;394:1;390:6;377:88;485:7;510:1;505:49;;;;598:16;584:12;577:38;505:49;535:16;521:12;514:38",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"./proxy.data.sol\";\n\ncontract Proxy is ProxyData {\n    constructor(address _proxied) public {\n        proxied = _proxied;\n    }\n\n    function () external payable {\n        address addr = proxied;\n        assembly {\n            let freememstart := mload(0x40)\n            calldatacopy(freememstart, 0, calldatasize())\n            let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, returndatasize())\n            switch success\n            case 0 { revert(freememstart, returndatasize()) }\n            default { return(freememstart, returndatasize()) }\n        }\n    }\n}",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
   "ast": {
-    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.sol",
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
     "exportedSymbols": {
       "Proxy": [
-        86
+        175
       ]
     },
-    "id": 87,
+    "id": 176,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 63,
+        "id": 152,
         "literals": [
           "solidity",
           "^",
@@ -43,16 +43,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:2"
+        "src": "0:24:5"
       },
       {
-        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
         "file": "./proxy.data.sol",
-        "id": 64,
+        "id": 153,
         "nodeType": "ImportDirective",
-        "scope": 87,
-        "sourceUnit": 62,
-        "src": "26:26:2",
+        "scope": 176,
+        "sourceUnit": 151,
+        "src": "26:26:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -62,57 +62,57 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 65,
+              "id": 154,
               "name": "ProxyData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 61,
-              "src": "72:9:2",
+              "referencedDeclaration": 150,
+              "src": "72:9:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ProxyData_$61",
+                "typeIdentifier": "t_contract$_ProxyData_$150",
                 "typeString": "contract ProxyData"
               }
             },
-            "id": 66,
+            "id": 155,
             "nodeType": "InheritanceSpecifier",
-            "src": "72:9:2"
+            "src": "72:9:5"
           }
         ],
         "contractDependencies": [
-          61
+          150
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 86,
+        "id": 175,
         "linearizedBaseContracts": [
-          86,
-          61
+          175,
+          150
         ],
         "name": "Proxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 75,
+              "id": 164,
               "nodeType": "Block",
-              "src": "125:35:2",
+              "src": "125:35:5",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 73,
+                    "id": 162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 71,
+                      "id": 160,
                       "name": "proxied",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 60,
-                      "src": "135:7:2",
+                      "referencedDeclaration": 149,
+                      "src": "135:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -122,31 +122,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 72,
+                      "id": 161,
                       "name": "_proxied",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 68,
-                      "src": "145:8:2",
+                      "referencedDeclaration": 157,
+                      "src": "145:8:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "135:18:2",
+                    "src": "135:18:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 74,
+                  "id": 163,
                   "nodeType": "ExpressionStatement",
-                  "src": "135:18:2"
+                  "src": "135:18:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 76,
+            "id": 165,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -154,16 +154,16 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 69,
+              "id": 158,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 68,
+                  "id": 157,
                   "name": "_proxied",
                   "nodeType": "VariableDeclaration",
-                  "scope": 76,
-                  "src": "100:16:2",
+                  "scope": 165,
+                  "src": "100:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -171,10 +171,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 67,
+                    "id": 156,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "100:7:2",
+                    "src": "100:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -184,39 +184,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "99:18:2"
+              "src": "99:18:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 70,
+              "id": 159,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "125:0:2"
+              "src": "125:0:5"
             },
-            "scope": 86,
-            "src": "88:72:2",
+            "scope": 175,
+            "src": "88:72:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 84,
+              "id": 173,
               "nodeType": "Block",
-              "src": "195:396:2",
+              "src": "195:438:5",
               "statements": [
                 {
                   "assignments": [
-                    80
+                    169
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 80,
+                      "id": 169,
                       "name": "addr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 85,
-                      "src": "205:12:2",
+                      "scope": 174,
+                      "src": "205:12:5",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -224,10 +224,10 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 79,
+                        "id": 168,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "205:7:2",
+                        "src": "205:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -237,44 +237,44 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 82,
+                  "id": 171,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 81,
+                    "id": 170,
                     "name": "proxied",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 60,
-                    "src": "220:7:2",
+                    "referencedDeclaration": 149,
+                    "src": "220:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "205:22:2"
+                  "src": "205:22:5"
                 },
                 {
                   "externalReferences": [
                     {
                       "addr": {
-                        "declaration": 80,
+                        "declaration": 169,
                         "isOffset": false,
                         "isSlot": false,
-                        "src": "398:4:2",
+                        "src": "398:4:5",
                         "valueSize": 1
                       }
                     }
                   ],
-                  "id": 83,
+                  "id": 172,
                   "nodeType": "InlineAssembly",
-                  "operations": "{\n    let freememstart := mload(0x40)\n    calldatacopy(freememstart, 0, calldatasize())\n    let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, 32)\n    switch success\n    case 0 {\n        revert(freememstart, 32)\n    }\n    default {\n        return(freememstart, 32)\n    }\n}",
-                  "src": "237:354:2"
+                  "operations": "{\n    let freememstart := mload(0x40)\n    calldatacopy(freememstart, 0, calldatasize())\n    let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, returndatasize())\n    switch success\n    case 0 {\n        revert(freememstart, returndatasize())\n    }\n    default {\n        return(freememstart, returndatasize())\n    }\n}",
+                  "src": "237:396:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 85,
+            "id": 174,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -282,43 +282,43 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 77,
+              "id": 166,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "175:2:2"
+              "src": "175:2:5"
             },
             "payable": true,
             "returnParameters": {
-              "id": 78,
+              "id": 167,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "195:0:2"
+              "src": "195:0:5"
             },
-            "scope": 86,
-            "src": "166:425:2",
+            "scope": 175,
+            "src": "166:467:5",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 87,
-        "src": "54:539:2"
+        "scope": 176,
+        "src": "54:581:5"
       }
     ],
-    "src": "0:593:2"
+    "src": "0:635:5"
   },
   "legacyAST": {
-    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.sol",
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
     "exportedSymbols": {
       "Proxy": [
-        86
+        175
       ]
     },
-    "id": 87,
+    "id": 176,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 63,
+        "id": 152,
         "literals": [
           "solidity",
           "^",
@@ -326,16 +326,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:2"
+        "src": "0:24:5"
       },
       {
-        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy.data.sol",
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
         "file": "./proxy.data.sol",
-        "id": 64,
+        "id": 153,
         "nodeType": "ImportDirective",
-        "scope": 87,
-        "sourceUnit": 62,
-        "src": "26:26:2",
+        "scope": 176,
+        "sourceUnit": 151,
+        "src": "26:26:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -345,57 +345,57 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 65,
+              "id": 154,
               "name": "ProxyData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 61,
-              "src": "72:9:2",
+              "referencedDeclaration": 150,
+              "src": "72:9:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ProxyData_$61",
+                "typeIdentifier": "t_contract$_ProxyData_$150",
                 "typeString": "contract ProxyData"
               }
             },
-            "id": 66,
+            "id": 155,
             "nodeType": "InheritanceSpecifier",
-            "src": "72:9:2"
+            "src": "72:9:5"
           }
         ],
         "contractDependencies": [
-          61
+          150
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 86,
+        "id": 175,
         "linearizedBaseContracts": [
-          86,
-          61
+          175,
+          150
         ],
         "name": "Proxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 75,
+              "id": 164,
               "nodeType": "Block",
-              "src": "125:35:2",
+              "src": "125:35:5",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 73,
+                    "id": 162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 71,
+                      "id": 160,
                       "name": "proxied",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 60,
-                      "src": "135:7:2",
+                      "referencedDeclaration": 149,
+                      "src": "135:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -405,31 +405,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 72,
+                      "id": 161,
                       "name": "_proxied",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 68,
-                      "src": "145:8:2",
+                      "referencedDeclaration": 157,
+                      "src": "145:8:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "135:18:2",
+                    "src": "135:18:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 74,
+                  "id": 163,
                   "nodeType": "ExpressionStatement",
-                  "src": "135:18:2"
+                  "src": "135:18:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 76,
+            "id": 165,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -437,16 +437,16 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 69,
+              "id": 158,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 68,
+                  "id": 157,
                   "name": "_proxied",
                   "nodeType": "VariableDeclaration",
-                  "scope": 76,
-                  "src": "100:16:2",
+                  "scope": 165,
+                  "src": "100:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -454,10 +454,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 67,
+                    "id": 156,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "100:7:2",
+                    "src": "100:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -467,39 +467,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "99:18:2"
+              "src": "99:18:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 70,
+              "id": 159,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "125:0:2"
+              "src": "125:0:5"
             },
-            "scope": 86,
-            "src": "88:72:2",
+            "scope": 175,
+            "src": "88:72:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 84,
+              "id": 173,
               "nodeType": "Block",
-              "src": "195:396:2",
+              "src": "195:438:5",
               "statements": [
                 {
                   "assignments": [
-                    80
+                    169
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 80,
+                      "id": 169,
                       "name": "addr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 85,
-                      "src": "205:12:2",
+                      "scope": 174,
+                      "src": "205:12:5",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -507,10 +507,10 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 79,
+                        "id": 168,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "205:7:2",
+                        "src": "205:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -520,44 +520,44 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 82,
+                  "id": 171,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 81,
+                    "id": 170,
                     "name": "proxied",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 60,
-                    "src": "220:7:2",
+                    "referencedDeclaration": 149,
+                    "src": "220:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "205:22:2"
+                  "src": "205:22:5"
                 },
                 {
                   "externalReferences": [
                     {
                       "addr": {
-                        "declaration": 80,
+                        "declaration": 169,
                         "isOffset": false,
                         "isSlot": false,
-                        "src": "398:4:2",
+                        "src": "398:4:5",
                         "valueSize": 1
                       }
                     }
                   ],
-                  "id": 83,
+                  "id": 172,
                   "nodeType": "InlineAssembly",
-                  "operations": "{\n    let freememstart := mload(0x40)\n    calldatacopy(freememstart, 0, calldatasize())\n    let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, 32)\n    switch success\n    case 0 {\n        revert(freememstart, 32)\n    }\n    default {\n        return(freememstart, 32)\n    }\n}",
-                  "src": "237:354:2"
+                  "operations": "{\n    let freememstart := mload(0x40)\n    calldatacopy(freememstart, 0, calldatasize())\n    let success := delegatecall(not(0), addr, freememstart, calldatasize(), freememstart, returndatasize())\n    switch success\n    case 0 {\n        revert(freememstart, returndatasize())\n    }\n    default {\n        return(freememstart, returndatasize())\n    }\n}",
+                  "src": "237:396:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 85,
+            "id": 174,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -565,30 +565,30 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 77,
+              "id": 166,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "175:2:2"
+              "src": "175:2:5"
             },
             "payable": true,
             "returnParameters": {
-              "id": 78,
+              "id": 167,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "195:0:2"
+              "src": "195:0:5"
             },
-            "scope": 86,
-            "src": "166:425:2",
+            "scope": 175,
+            "src": "166:467:5",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 87,
-        "src": "54:539:2"
+        "scope": 176,
+        "src": "54:581:5"
       }
     ],
-    "src": "0:593:2"
+    "src": "0:635:5"
   },
   "compiler": {
     "name": "solc",
@@ -596,7 +596,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-08T00:54:25.558Z",
+  "updatedAt": "2019-03-17T16:19:07.281Z",
   "devdoc": {
     "methods": {}
   },
