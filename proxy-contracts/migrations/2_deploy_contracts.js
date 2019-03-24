@@ -4,6 +4,8 @@ var CalcLib			= artifacts.require("CalcLib");
 var CalculatorV3    = artifacts.require("CalculatorV3");
 let Proxy			= artifacts.require("Proxy");
 
+var Upgradeable    = artifacts.require("Upgradeable");
+
 
 async function doDeploy(deployer, network) {
 	const calcResult = await deployer.deploy(Calculator, 100);
@@ -11,7 +13,7 @@ async function doDeploy(deployer, network) {
 	await deployer.deploy(CalculatorV2, 50);
 	await deployer.deploy(CalcLib);
 	await deployer.link(CalcLib, CalculatorV3);
-	await deployer.deploy(CalculatorV3, 500);
+	await deployer.deploy(CalculatorV3, 500);	
 }
 
 module.exports = (deployer, network) => { 

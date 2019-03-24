@@ -1,12 +1,18 @@
 pragma solidity ^0.4.23;
 
-import "../upgradeable/upgradeable.sol";
+import "../util/safemath.sol";
+import "../storage/keyvalue.storage.data.sol";
 
-contract CalculatorV5 is Upgradeable {
-    uint256 internal _count;
+contract CalculatorV5 is StorageState {
+   using SafeMath for uint256;
 
-    constructor(uint256 count)public {
-        _count = count;
+    constructor() public {
+        
+    }
+
+    function setCount(uint256 count) public returns(bool) {
+        _storage.setUint("count",  count); 
+        return true;
     }
 
     function increment(uint256 amount)
@@ -14,7 +20,9 @@ contract CalculatorV5 is Upgradeable {
         returns (bool)
     {
         require(amount > 0, "amount must be positive");
-        _count = _count + amount;
+        uint256 count = _storage.getUint("count");       
+        uint256 _count = count + amount;
+        _storage.setUint("count", _count);
         return true;
     }
 
@@ -23,6 +31,6 @@ contract CalculatorV5 is Upgradeable {
         view
         returns(uint256)
     {
-        return _count;
+        return _storage.getUint("count");
     }
 }

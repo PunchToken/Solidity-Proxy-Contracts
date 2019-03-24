@@ -30,7 +30,7 @@ contract('Calculator', (accounts) => {
         calcV5 = await CalculatorV5.new(100);
         calcV6 = await CalculatorV6.new(100);
         uproxy = await UpgradeableProxy.new(calcV5.address);
-        calcV5Proxy =  CalculatorV5.at(uproxy.address);
+        calcV5Proxy =  await CalculatorV5.at(uproxy.address);
         await calcV5Proxy.initialize();
     });
 
@@ -78,7 +78,7 @@ contract('Calculator', (accounts) => {
     });
 
     it('calc v5 should equal 100',async () => {
-        let value = await calcV5Proxy.getCount.call();
+        let value = await calcV5Proxy.getCount({from:accounts[1]});
         assert.equal(value, 100);
     });
 });

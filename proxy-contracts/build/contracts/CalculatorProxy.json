@@ -1,0 +1,969 @@
+{
+  "contractName": "CalculatorProxy",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "proxied",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint56"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Incremented",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50604051604080610116833981018060405281019080805190602001909291908051906020019092919050505081806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550508066ffffffffffffff16600181905550505060778061009f6000396000f300608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f480600081146047573d83f35b3d83fd00a165627a7a723058205b2bf7542a861e3cea9da45d5975fc6a882b1a4f7220dbf8a2c045433194be010029",
+  "deployedBytecode": "0x608060405260008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060405136600082373d81368385600019f480600081146047573d83f35b3d83fd00a165627a7a723058205b2bf7542a861e3cea9da45d5975fc6a882b1a4f7220dbf8a2c045433194be010029",
+  "sourceMap": "286:176:7:-;;;342:118;8:9:-1;5:2;;;30:1;27;20:12;5:2;342:118:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;416:7;145:8:15;135:7;;:18;;;;;;;;;;;;;;;;;;88:72;447:6:7;439:14;;:5;:14;;;;342:118;;286:176;;;;;;",
+  "deployedSourceMap": "286:176:7:-;;;205:12:15;220:7;;;;;;;;;;;205:22;;286:4;280:11;334:14;331:1;317:12;304:45;448:16;434:12;418:14;404:12;398:4;394:1;390:6;377:88;485:7;510:1;505:49;;;;598:16;584:12;577:38;505:49;535:16;521:12;514:38",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"../proxy/proxy.sol\";\nimport \"../proxy/proxy.data.sol\";\n\ncontract CalculatorHeader {\n    event Incremented(uint256 indexed value, uint256 indexed amount);\n}\n\ncontract CalculatorData is ProxyData, CalculatorHeader {    \n    uint256 internal value;   \n}\n\ncontract CalculatorProxy is Proxy, CalculatorData {\n    constructor(address proxied, uint56 _value) \n        public\n        Proxy(proxied)\n    {\n        value = _value;\n    }\n}",
+  "sourcePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/misc/calculator4.sol",
+  "ast": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/misc/calculator4.sol",
+    "exportedSymbols": {
+      "CalculatorData": [
+        368
+      ],
+      "CalculatorHeader": [
+        361
+      ],
+      "CalculatorProxy": [
+        388
+      ]
+    },
+    "id": 389,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 352,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
+        "file": "../proxy/proxy.sol",
+        "id": 353,
+        "nodeType": "ImportDirective",
+        "scope": 389,
+        "sourceUnit": 669,
+        "src": "26:28:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
+        "file": "../proxy/proxy.data.sol",
+        "id": 354,
+        "nodeType": "ImportDirective",
+        "scope": 389,
+        "sourceUnit": 644,
+        "src": "55:33:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 361,
+        "linearizedBaseContracts": [
+          361
+        ],
+        "name": "CalculatorHeader",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 360,
+            "name": "Incremented",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 359,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 356,
+                  "indexed": true,
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 360,
+                  "src": "140:21:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 355,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "140:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 358,
+                  "indexed": true,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 360,
+                  "src": "163:22:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 357,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "163:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "139:47:7"
+            },
+            "src": "122:65:7"
+          }
+        ],
+        "scope": 389,
+        "src": "90:99:7"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 362,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 643,
+              "src": "218:9:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$643",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 363,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:9:7"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 364,
+              "name": "CalculatorHeader",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 361,
+              "src": "229:16:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CalculatorHeader_$361",
+                "typeString": "contract CalculatorHeader"
+              }
+            },
+            "id": 365,
+            "nodeType": "InheritanceSpecifier",
+            "src": "229:16:7"
+          }
+        ],
+        "contractDependencies": [
+          361,
+          643
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 368,
+        "linearizedBaseContracts": [
+          368,
+          361,
+          643
+        ],
+        "name": "CalculatorData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 367,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 368,
+            "src": "256:22:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 366,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "256:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 389,
+        "src": "191:93:7"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 369,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 668,
+              "src": "314:5:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$668",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 370,
+            "nodeType": "InheritanceSpecifier",
+            "src": "314:5:7"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 371,
+              "name": "CalculatorData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 368,
+              "src": "321:14:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CalculatorData_$368",
+                "typeString": "contract CalculatorData"
+              }
+            },
+            "id": 372,
+            "nodeType": "InheritanceSpecifier",
+            "src": "321:14:7"
+          }
+        ],
+        "contractDependencies": [
+          361,
+          368,
+          643,
+          668
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 388,
+        "linearizedBaseContracts": [
+          388,
+          368,
+          361,
+          668,
+          643
+        ],
+        "name": "CalculatorProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 386,
+              "nodeType": "Block",
+              "src": "429:31:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 384,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 382,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 367,
+                      "src": "439:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 383,
+                      "name": "_value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 376,
+                      "src": "447:6:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint56",
+                        "typeString": "uint56"
+                      }
+                    },
+                    "src": "439:14:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 385,
+                  "nodeType": "ExpressionStatement",
+                  "src": "439:14:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 387,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 379,
+                    "name": "proxied",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 374,
+                    "src": "416:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 380,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 378,
+                  "name": "Proxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 668,
+                  "src": "410:5:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Proxy_$668_$",
+                    "typeString": "type(contract Proxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "410:14:7"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 374,
+                  "name": "proxied",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 387,
+                  "src": "354:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 373,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 376,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 387,
+                  "src": "371:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint56",
+                    "typeString": "uint56"
+                  },
+                  "typeName": {
+                    "id": 375,
+                    "name": "uint56",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint56",
+                      "typeString": "uint56"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "353:32:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 381,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "429:0:7"
+            },
+            "scope": 388,
+            "src": "342:118:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 389,
+        "src": "286:176:7"
+      }
+    ],
+    "src": "0:462:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/misc/calculator4.sol",
+    "exportedSymbols": {
+      "CalculatorData": [
+        368
+      ],
+      "CalculatorHeader": [
+        361
+      ],
+      "CalculatorProxy": [
+        388
+      ]
+    },
+    "id": 389,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 352,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.sol",
+        "file": "../proxy/proxy.sol",
+        "id": 353,
+        "nodeType": "ImportDirective",
+        "scope": 389,
+        "sourceUnit": 669,
+        "src": "26:28:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dennismacpro/Ascension/Solidity-Proxy-Contracts/proxy-contracts/contracts/proxy/proxy.data.sol",
+        "file": "../proxy/proxy.data.sol",
+        "id": 354,
+        "nodeType": "ImportDirective",
+        "scope": 389,
+        "sourceUnit": 644,
+        "src": "55:33:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 361,
+        "linearizedBaseContracts": [
+          361
+        ],
+        "name": "CalculatorHeader",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 360,
+            "name": "Incremented",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 359,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 356,
+                  "indexed": true,
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 360,
+                  "src": "140:21:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 355,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "140:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 358,
+                  "indexed": true,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 360,
+                  "src": "163:22:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 357,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "163:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "139:47:7"
+            },
+            "src": "122:65:7"
+          }
+        ],
+        "scope": 389,
+        "src": "90:99:7"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 362,
+              "name": "ProxyData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 643,
+              "src": "218:9:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProxyData_$643",
+                "typeString": "contract ProxyData"
+              }
+            },
+            "id": 363,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:9:7"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 364,
+              "name": "CalculatorHeader",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 361,
+              "src": "229:16:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CalculatorHeader_$361",
+                "typeString": "contract CalculatorHeader"
+              }
+            },
+            "id": 365,
+            "nodeType": "InheritanceSpecifier",
+            "src": "229:16:7"
+          }
+        ],
+        "contractDependencies": [
+          361,
+          643
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 368,
+        "linearizedBaseContracts": [
+          368,
+          361,
+          643
+        ],
+        "name": "CalculatorData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 367,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 368,
+            "src": "256:22:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 366,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "256:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 389,
+        "src": "191:93:7"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 369,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 668,
+              "src": "314:5:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$668",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 370,
+            "nodeType": "InheritanceSpecifier",
+            "src": "314:5:7"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 371,
+              "name": "CalculatorData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 368,
+              "src": "321:14:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CalculatorData_$368",
+                "typeString": "contract CalculatorData"
+              }
+            },
+            "id": 372,
+            "nodeType": "InheritanceSpecifier",
+            "src": "321:14:7"
+          }
+        ],
+        "contractDependencies": [
+          361,
+          368,
+          643,
+          668
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 388,
+        "linearizedBaseContracts": [
+          388,
+          368,
+          361,
+          668,
+          643
+        ],
+        "name": "CalculatorProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 386,
+              "nodeType": "Block",
+              "src": "429:31:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 384,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 382,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 367,
+                      "src": "439:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 383,
+                      "name": "_value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 376,
+                      "src": "447:6:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint56",
+                        "typeString": "uint56"
+                      }
+                    },
+                    "src": "439:14:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 385,
+                  "nodeType": "ExpressionStatement",
+                  "src": "439:14:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 387,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 379,
+                    "name": "proxied",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 374,
+                    "src": "416:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 380,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 378,
+                  "name": "Proxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 668,
+                  "src": "410:5:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Proxy_$668_$",
+                    "typeString": "type(contract Proxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "410:14:7"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 374,
+                  "name": "proxied",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 387,
+                  "src": "354:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 373,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 376,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 387,
+                  "src": "371:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint56",
+                    "typeString": "uint56"
+                  },
+                  "typeName": {
+                    "id": 375,
+                    "name": "uint56",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint56",
+                      "typeString": "uint56"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "353:32:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 381,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "429:0:7"
+            },
+            "scope": 388,
+            "src": "342:118:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 389,
+        "src": "286:176:7"
+      }
+    ],
+    "src": "0:462:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-24T20:28:41.650Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
